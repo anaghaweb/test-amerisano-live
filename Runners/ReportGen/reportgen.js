@@ -36,17 +36,26 @@ const { exec } = require( "child_process" );
 
 
 // Command to generate reports for createAccountForm
-exec( 'npx allure generate ./raw-test-data/forms/caform -o ./TestReports/Form/AccountCreation --clean', ( error, stdout, stderr ) => {
-    if ( error ) {
-        console.error( `Error: ${ error.message }` );
-        return;
-    }
-    console.log( `stdout: ${ stdout }` );
-    console.error( `stderr: ${ stderr }` );
-} );
+// exec( 'npx allure generate ./raw-test-data/forms/caform -o ./TestReports/Form/AccountCreation --clean', ( error, stdout, stderr ) => {
+//     if ( error ) {
+//         console.error( `Error: ${ error.message }` );
+//         return;
+//     }
+//     console.log( `stdout: ${ stdout }` );
+//     console.error( `stderr: ${ stderr }` );
+// } );
 
-// Command to generate reports for newInfoForm
-exec( 'npx allure generate ./raw-test-data/forms/niform -o ./TestReports/Form/NewInfo --clean', ( error, stdout, stderr ) => {
+// // Command to generate reports for newInfoForm
+// exec( 'npx allure generate ../../raw-test-data/forms/niform -o ../../TestReports/Form/NewInfo --clean', ( error, stdout, stderr ) => {
+//     if ( error ) {
+//         console.error( `Error: ${ error.message }` );
+//         return;
+//     }
+//     console.log( `stdout: ${ stdout }` );
+//     console.error( `stderr: ${ stderr }` );
+// } );
+
+exec( 'npx allure generate ../../raw-test-data/checkout/checkoutAllProducts -o ../../TestReports/Checkout --clean', ( error, stdout, stderr ) => {
     if ( error ) {
         console.error( `Error: ${ error.message }` );
         return;
