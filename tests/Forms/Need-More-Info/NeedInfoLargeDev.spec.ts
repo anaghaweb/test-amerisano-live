@@ -4,7 +4,7 @@ import { NeedMoreinfoForm } from "../../Objects/Forms/Need-Info-Form";
 import { setupTest, teardownTest, getPage } from "../../SetupTest/setupTest";
 import { largeScreen } from "../../Context/largeScreen";
 
-process.env.ALLURE_RESULTS_DIR = "/reports/form/needInfoForm";
+process.env.ALLURE_RESULTS_DIR = "/raw-test-data/forms/niform";
 
 test.describe("Need More Info - Desktop/Laptop", async () => {
   test.slow();
