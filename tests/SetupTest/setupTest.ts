@@ -29,6 +29,7 @@ export async function teardownTest() {
   if (context) {
     await page.close();
     await context.close();
+    await browser.close();
   }
 }
 

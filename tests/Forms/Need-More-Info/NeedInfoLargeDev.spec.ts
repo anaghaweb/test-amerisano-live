@@ -1,5 +1,5 @@
 import { test, expect } from "@playwright/test";
-import OrderPage from "../../page-objects/goto-OrderPage";
+import OrderPage from "../../Objects/Pages/orderPage/goto-OrderPage";
 import { NeedMoreinfoForm } from "../../Objects/Forms/Need-Info-Form";
 import { setupTest, teardownTest, getPage } from "../../SetupTest/setupTest";
 import { largeScreen } from "../../Context/largeScreen";

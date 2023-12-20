@@ -11,8 +11,7 @@ class AS600_Order_Section {
 
   //Locators
 
-  AS600_section = () =>
-    this.page.getByText("Nitrile Exam Gloves | AS-600").first();
+  AS600_section = () => this.page.locator(".product_pricing__PC29q").first();
   AS600_heading = () =>
     this.page.getByRole("heading", { name: "Nitrile Exam Gloves | AS-600" });
   sizeXS = () => this.page.locator(".input_input__lyuFG").first();

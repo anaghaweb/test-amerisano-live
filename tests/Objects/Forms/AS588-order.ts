@@ -9,7 +9,9 @@ class AS588_Order_Section {
   //Locators
 
   AS588_section = () =>
-    this.page.getByText("Nitrile Exam Gloves | AS-588").first();
+    this.page.locator(
+      "div:nth-child(3) > .product_product__DrVEg > .product_content__yjUC8 > .product_row__cJSpY > .product_product-details__2Zl1a > .product_bottom__g5i_4 > .product_pricing__PC29q > .styles_table__uAicj"
+    );
   AS588_heading = () =>
     this.page.getByRole("heading", { name: "Nitrile Exam Gloves | AS-588" });
 

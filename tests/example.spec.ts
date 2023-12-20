@@ -1,5 +1,4 @@
 import { test, expect } from "@playwright/test";
-import AS600_Order_Section from "./Objects/Forms/AS600-order";
 
 test.describe("recordlocator", () => {
   const { chromium, webkit, firefox } = require("playwright");
@@ -8,19 +7,38 @@ test.describe("recordlocator", () => {
     /**
      * @Epic Add to Cart
      * @Feature place order
-     * @Story OrderPage
+     * @Story OrderPageawait page.goto('https://www.amerisano.com/');
+     await page.goto('https://www.amerisano.com/order');
      */
-    await page.goto("https://www.amerisano.com/");
+    await page.goto("https://amerisano.com");
+    await page.locator(".product_product-details__2Zl1a").first().click();
+    await page.locator(".product_product-details__2Zl1a").first().click();
+    await page
+      .frameLocator('iframe[title="Kustomer Widget Iframe"]')
+      .getByLabel("Close Chat Popup")
+      .click();
 
-    await page.getByRole('button', { name: 'Accept All' }).click();
-    await page.locator('#header-desktop').getByRole('link', { name: 'Shop' }).click();
-    await page.locator('div:nth-child(2) > .input_container__8yb9l > .input_data__fSFbO > .input_input__lyuFG').first().fill('1');
-    await page.locator('div:nth-child(2) > .input_container__8yb9l > .input_data__fSFbO > .input_input__lyuFG').first().click();
-    await page.getByRole('button', { name: 'ADD TO CART' }).first().click();
-    await page.locator('.icon-close').click();
-    await page.getByRole('link', { name: 'Link to cart page Cart' }).click();
-    await expect(page.getByText('Amerisano AS-600 - 4 mil Chemo-Rated Nitrile Examination Gloves - 510(k) - Case Small 1 x $43.95RemoveUpdate $')).toBeVisible();
-    await expect(page.getByRole('link', { name: 'Continue Shopping' })).toBeVisible();
-    await page.frameLocator('iframe[title="Kustomer Widget Iframe"]').getByLabel('Close Chat Popup').click();
+    //AS580 section
+    await page
+      .locator(
+        "div:nth-child(2) > .product_product__DrVEg > .product_content__yjUC8 > .product_row__cJSpY > .product_product-details__2Zl1a > .product_bottom__g5i_4 > .product_pricing__PC29q"
+      )
+      .click();
+
+    //AS600 section
+
+    await page.locator(".product_pricing__PC29q").first().click();
+    //as588 section
+
+    await page
+      .locator(
+        "div:nth-child(3) > .product_product__DrVEg > .product_content__yjUC8 > .product_row__cJSpY > .product_product-details__2Zl1a > .product_bottom__g5i_4 > .product_pricing__PC29q > .styles_table__uAicj"
+      )
+      .click();
+    await page
+      .locator(
+        "div:nth-child(3) > .product_product__DrVEg > .product_content__yjUC8 > .product_row__cJSpY > .product_product-details__2Zl1a > .product_bottom__g5i_4 > .product_pricing__PC29q"
+      )
+      .click();
   });
 });

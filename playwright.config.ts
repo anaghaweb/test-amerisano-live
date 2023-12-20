@@ -24,7 +24,7 @@ export default defineConfig({
     ["line"],
     ["html", { open: "never", outputFolder: "playwright-report" }],
     // ["json", { outputDir: "json-reports" }],
-    ["allure-playwright"],
+    ["allure-playwright", { detail: true }],
   ],
   timeout: 180000,
 
@@ -34,7 +34,8 @@ export default defineConfig({
     // baseURL: 'http://127.0.0.1:3000',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: "off",
+    trace: "on-first-retry",
+    
   },
 
   /* Configure projects for major browsers */

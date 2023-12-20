@@ -36,30 +36,41 @@ const { exec } = require( "child_process" );
 
 
 // Command to generate reports for createAccountForm
-// exec( 'npx allure generate ./raw-test-data/forms/caform -o ./TestReports/Form/AccountCreation --clean', ( error, stdout, stderr ) => {
-//     if ( error ) {
-//         console.error( `Error: ${ error.message }` );
-//         return;
-//     }
-//     console.log( `stdout: ${ stdout }` );
-//     console.error( `stderr: ${ stderr }` );
-// } );
+exec( 'npx allure generate ../../raw-test-data/forms/caform -o ../../TestReports/Form/AccountCreation --clean', ( error, stdout, stderr ) => {
+    if ( error ) {
+        console.error( `Error: ${ error.message }` );
+        return;
+    }
+    console.log( `stdout: ${ stdout }` );
 
-// // Command to generate reports for newInfoForm
+} );
+
+// Command to generate reports for newInfoForm
 // exec( 'npx allure generate ../../raw-test-data/forms/niform -o ../../TestReports/Form/NewInfo --clean', ( error, stdout, stderr ) => {
 //     if ( error ) {
 //         console.error( `Error: ${ error.message }` );
 //         return;
 //     }
 //     console.log( `stdout: ${ stdout }` );
+
+// } );
+
+
+// exec( 'npx allure generate ../../raw-test-data/checkout/checkoutAllProducts -o ../../TestReports/Checkout --clean', ( error, stdout, stderr ) => {
+//     if ( error ) {
+//         console.error( `Error: ${ error.message }` );
+//         return;
+//     }
+//     console.log( `stdout: ${ stdout }` );
 //     console.error( `stderr: ${ stderr }` );
 // } );
 
-exec( 'npx allure generate ../../raw-test-data/checkout/checkoutAllProducts -o ../../TestReports/Checkout --clean', ( error, stdout, stderr ) => {
-    if ( error ) {
-        console.error( `Error: ${ error.message }` );
-        return;
-    }
-    console.log( `stdout: ${ stdout }` );
-    console.error( `stderr: ${ stderr }` );
-} );
+//Report generate for Page Sections
+// exec( 'npx allure generate ../../raw-test-data/pages/orderpage -o ../../TestReports/pages/orderpage --clean', ( error, stdout, stderr ) => {
+//     if ( error ) {
+//         console.error( `Error: ${ error.message }` );
+//         return;
+//     }
+//     console.log( `stdout: ${ stdout }` );
+
+// } );
