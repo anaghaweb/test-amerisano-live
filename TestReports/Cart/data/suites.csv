@@ -1,5 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Mon Dec 18 13:16:58 IST 2023","Mon Dec 18 13:17:52 IST 2023","54442","chromium","Forms\NeedMoreinfoForm.spec.ts","NeedInfo-Form-Submission-Tests","","","submission should fail due to empty email field",""
-"passed","Mon Dec 18 12:20:17 IST 2023","Mon Dec 18 12:20:40 IST 2023","22742","chromium","Forms\NeedMoreinfoForm.spec.ts","NeedInfo-Form-Submission-Tests","","","submission should fail due to empty FirstName field",""
-"failed","Sun Dec 17 01:34:42 IST 2023","Sun Dec 17 01:37:26 IST 2023","164150","chromium","cart\checkout.spec.ts","record","","","should work",""
-"passed","Sat Dec 16 01:30:14 IST 2023","Sat Dec 16 01:32:26 IST 2023","132055","chromium","cart\cart.spec.ts","","","","AS580-add-to-cart",""
