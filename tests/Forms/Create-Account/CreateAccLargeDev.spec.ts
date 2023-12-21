@@ -3,7 +3,7 @@ import { largeScreen } from "../../Context/largeScreen";
 import { setupTest, teardownTest, getPage } from "../../SetupTest/setupTest";
 import CreateAccountForm from "../../Objects/Forms/CreateAccount-Form";
 
-process.env.ALLURE_RESULTS_DIR = "/raw-test-data/form/caform";
+process.env.ALLURE_RESULTS_DIR = "raw-test-data/forms/caform";
 
 test.describe("Create Account Form", async () => {
   test.slow();
@@ -73,7 +73,7 @@ test.describe("Create Account Form", async () => {
       await createNewAcc.ConfirmPassword("nofake123"); //password mismatch
       //submit with password values not matching
       await createNewAcc.clickSubmitButton();
-      await page.waitForTimeout(1000);
+       await page.waitForTimeout(1000);
       await createNewAcc.CheckSubmissionStatus();
       await testInfo.attach(`create_Acc_Form_${device.name}.png`, {
         body: await page.screenshot(),

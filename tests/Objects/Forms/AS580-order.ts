@@ -15,8 +15,8 @@ class AS580_Order_Section {
 
   AS580_section = () =>
     this.page.locator(
-        "div:nth-child(2) > .product_product__DrVEg > .product_content__yjUC8 > .product_row__cJSpY > .product_product-details__2Zl1a"
-      );
+      "div:nth-child(2) > .product_product__DrVEg > .product_content__yjUC8 > .product_row__cJSpY > .product_product-details__2Zl1a"
+    );
   AS580_heading = () =>
     this.page.getByRole("heading", { name: "Nitrile Exam Gloves | AS-580" });
   sizeXS = () => this.page.locator(`${locator_1}> ${locator_2}`).first();

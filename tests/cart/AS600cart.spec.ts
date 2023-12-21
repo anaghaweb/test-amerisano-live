@@ -10,10 +10,12 @@ import { largeScreen } from "../Context/largeScreen";
 
 process.env.ALLURE_RESULTS_DIR = "raw-test-data/cart/addtocart/AS600";
 
+test.beforeEach("teardown Context", async () => {
+  await teardownTest();
+});
+
 for (const device of largeScreen) {
-  test.beforeEach("teardown Context", async () => {
-    await teardownTest();
-  });
+  
 
   test(`AS580 ViewCart Order Page on device ${device.name} `, async ({}, testInfo) => {
     /**
@@ -34,7 +36,7 @@ for (const device of largeScreen) {
     const orderAS600 = new AS600_Order_Section(page);
     await orderAS600.AS600OrderSection("1", "1", "1", "1", "1");
     await orderAS600.Add_AS600_To_Cart().click();
-    await page.waitForTimeout(1000);
+    await page.waitForTimeout(300);
     await page.getByRole("link", { name: "Link to cart page Cart" }).click();
     await page.waitForLoadState("domcontentloaded");
 

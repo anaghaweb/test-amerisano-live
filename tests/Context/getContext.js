@@ -27,7 +27,7 @@ const GetContext = ( deviceName ) => {
       break;
     case "Desktop Safari":
     case "Desktop Chrome":
-    case "Desktop Firefox":
+    // case "Desktop Firefox":
       context = { viewport: { width: 1920, height: 1080 } };
       break;
     case "Desktop Edge HiDPI":

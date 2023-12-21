@@ -34,7 +34,7 @@ for (const device of largeScreen) {
     const orderAS580 = new AS580_Order_Section(page);
     await orderAS580.AS580OrderSection("1", "1", "1", "1", "1");
     await orderAS580.Add_AS580_To_Cart().click();
-    await page.waitForTimeout(1000);
+    await page.waitForTimeout(300);
     await page.locator(".icon-close").click();
     await page.getByRole("link", { name: "Link to cart page Cart" }).click();
     await page.waitForTimeout(2000);

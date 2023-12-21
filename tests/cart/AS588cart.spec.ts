@@ -10,11 +10,12 @@ import { largeScreen } from "../Context/largeScreen";
 
 process.env.ALLURE_RESULTS_DIR = "raw-test-data/cart/addtocart/AS588";
 
-for (const device of largeScreen) {
-  test.beforeEach("teardown Context", async () => {
-    await teardownTest();
-  });
+test.beforeEach("teardown Context", async () => {
+  await teardownTest();
+});
 
+for (const device of largeScreen) {
+ 
   test(`AS588 ViewCart Order Page on device ${device.name} `, async ({}, testInfo) => {
     /**
      * @Epic Add to Cart

@@ -7,6 +7,7 @@ import Proceed_To_Checkout_Btn from "../Objects/Shared/Buttons/Proceed-To-Checko
 import OrderPage from "../Objects/Pages/orderPage/goto-OrderPage";
 import { setupTest, teardownTest, getPage } from "../SetupTest/setupTest";
 import { largeScreen } from "../Context/largeScreen";
+import DiscountCoupanPopup from "../Objects/Shared/Popups/modal";
 
 process.env.ALLURE_RESULTS_DIR = "raw-test-data/checkout/checkoutAllProducts";
 
@@ -43,6 +44,7 @@ for (const device of largeScreen) {
     await orderAS600.AS600OrderSection("1", "1", "1", "1", "1");
     await orderAS600.Add_AS600_To_Cart().click();
     const checkoutBtn = new Proceed_To_Checkout_Btn(page);
+    const pom = new DiscountCoupanPopup(page);
     checkoutBtn.ProceedToCheckOutBtn().click();
 
     await page
@@ -69,13 +71,13 @@ for (const device of largeScreen) {
     const company = await page
       .locator('input[name="company"]')
       .fill("test company ");
-    const address = await page
+     await page
       .locator('input[name="address1"]')
       .fill("test address");
-    const address2 = await page
+    await page
       .locator('input[name="apartment"]')
       .fill("test apartment");
-    const city = await page.locator('input[name="city"]').fill("test city");
+    await page.locator('input[name="city"]').fill("test city");
     await page
       .locator(
         ".styles_dropdown__k8MjX > div > .input_container__8yb9l > .input_data__fSFbO > .input_input__lyuFG"
@@ -89,14 +91,16 @@ for (const device of largeScreen) {
         "div:nth-child(8) > .styles_dropdown__k8MjX > div > .input_container__8yb9l > .input_data__fSFbO > .input_input__lyuFG"
       )
       .click();
-    const state = await page.getByText("Alabama").click();
-    const zipcode = await page.locator('input[name="zipcode"]').fill("12345");
-    const phone = page.locator('input[type="phone"]').fill("1234567890");
+    await page.getByText("Alabama").click();
+    await page.locator('input[name="zipcode"]').fill("12345");
+    page.locator('input[type="phone"]').fill("1234567890");
     const addaddressbutton = await page
       .locator("button")
       .filter({ hasText: "Add address" });
     await addaddressbutton.scrollIntoViewIfNeeded();
     await addaddressbutton.click();
+    await pom.waitForDiscountCoupan();
+     
     await testInfo.attach(`create_Acc_Form_${device.name}.png`, {
       body: await page.screenshot({ fullPage: true }),
       contentType: "image/png",
