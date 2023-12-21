@@ -1,25 +1,23 @@
 import { test, expect } from "@playwright/test";
-import AS580_Order_Section from "../Objects/Forms/AS580-order";
-import AS588_Order_Section from "../Objects/Forms/AS588-order";
-import AS600_Order_Section from "../Objects/Forms/AS600-order";
-import OrderPage from "../Objects/Pages/orderPage/goto-OrderPage";
-import BetterPricingSection from "../Objects/Pages/orderPage/goto-section-betterPricing";
-import { setupTest, teardownTest, getPage } from "../SetupTest/setupTest";
-import { largeScreen } from "../Context/largeScreen";
-import ClientReviewSection from "../Objects/Pages/orderPage/goto-section-Testimonials";
-import ContactUs_Form from "../Objects/Pages/orderPage/goto-section-contactus";
+import AS580_Order_Section from "../../Objects/Forms/AS580-order";
+import AS588_Order_Section from "../../Objects/Forms/AS588-order";
+import AS600_Order_Section from "../../Objects/Forms/AS600-order";
+import OrderPage from "../../Objects/Pages/orderPage/goto-OrderPage";
+import BetterPricingSection from "../../Objects/Pages/orderPage/goto-section-betterPricing";
+import { setupTest, teardownTest, getPage } from "../../SetupTest/setupTest";
+import { largeScreen } from "../../Context/largeScreen";
+import ClientReviewSection from "../../Objects/Pages/orderPage/goto-section-Testimonials";
+import ContactUs_Form from "../../Objects/Pages/orderPage/goto-section-contactus";
 
 process.env.ALLURE_RESULTS_DIR = "raw-test-data/pages/orderpage";
 
- test.beforeEach("teardown Context", async () => {
-      await teardownTest();
-      console.log("context reset");
-    });
-    
+test.beforeEach("teardown Context", async () => {
+  await teardownTest();
+  console.log("context reset");
+});
+
 test.describe(`OrderPage Visual Regression Testing`, async () => {
   for (const device of largeScreen) {
-   
-
     test(`Section AS580 in Order Page ${device.name} `, async ({}, testInfo) => {
       /**
        * @Epic sections
@@ -102,7 +100,7 @@ test.describe(`OrderPage Visual Regression Testing`, async () => {
        * @Feature Better Pricing order form
        * @Story OrderPage
        */
-
+      0;
       /**
        * @Step Section Better Pricing screenshot
        */

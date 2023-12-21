@@ -10,13 +10,6 @@ test.describe("recordlocator", () => {
      * @Story OrderPageawait page.goto('https://www.amerisano.com/');
      await page.goto('https://www.amerisano.com/order');
      */
-    await page.goto("https://amerisano.com");
-    await page.locator(".product_product-details__2Zl1a").first().click();
-    await page.locator(".product_product-details__2Zl1a").first().click();
-    await page
-      .frameLocator('iframe[title="Kustomer Widget Iframe"]')
-      .getByLabel("Close Chat Popup")
-      .click();
 
     //AS580 section
     await page
@@ -35,10 +28,29 @@ test.describe("recordlocator", () => {
         "div:nth-child(3) > .product_product__DrVEg > .product_content__yjUC8 > .product_row__cJSpY > .product_product-details__2Zl1a > .product_bottom__g5i_4 > .product_pricing__PC29q > .styles_table__uAicj"
       )
       .click();
+    await page.goto("about:blank");
+    await page.goto("https://www.amerisano.com/order");
     await page
       .locator(
         "div:nth-child(3) > .product_product__DrVEg > .product_content__yjUC8 > .product_row__cJSpY > .product_product-details__2Zl1a > .product_bottom__g5i_4 > .product_pricing__PC29q"
       )
       .click();
+
+    //as600
+    await page.locator(".product_product-details__2Zl1a").first().click();
+    //as580
+    await page
+      .locator(
+        "div:nth-child(2) > .product_product__DrVEg > .product_content__yjUC8 > .product_row__cJSpY > .product_product-details__2Zl1a"
+      )
+      .click();
+    //as588
+    await page
+      .locator(
+        "div:nth-child(3) > .product_product__DrVEg > .product_content__yjUC8 > .product_row__cJSpY > .product_product-details__2Zl1a"
+      )
+      .click();
+
+    //better pricing
   });
 });
