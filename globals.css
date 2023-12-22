@@ -9,6 +9,10 @@
     background-color:#fafafa;
 
 }
+a{
+    text-decoration: none;
+    text-transform: none;
+}
 
 h1{
     font-size: 2rem;
@@ -18,4 +22,8 @@ h1{
 h5{
 font-size: 1.3rem;
     color: #3399ff;
+}
+
+li{
+    list-style: none;
 }
