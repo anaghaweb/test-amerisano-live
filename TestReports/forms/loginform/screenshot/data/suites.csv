@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"broken","Sat Dec 23 01:10:14 IST 2023","Sat Dec 23 01:11:55 IST 2023","101471","chromium","Forms\Login\screenshots\screenshot.spec.ts","Login Form on Macbook Pro 15 ","","","should be visible on Macbook Pro 15",""
+"passed","Sat Dec 23 01:12:02 IST 2023","Sat Dec 23 01:12:49 IST 2023","46911","chromium","Forms\Login\screenshots\screenshot.spec.ts","Login Form on Desktop Chrome ","","","should be visible on Desktop Chrome",""
+"passed","Sat Dec 23 01:09:13 IST 2023","Sat Dec 23 01:10:14 IST 2023","60595","chromium","Forms\Login\screenshots\screenshot.spec.ts","Login Form on Microsoft Surface ","","","should be visible on Microsoft Surface",""
+"passed","Sat Dec 23 01:12:49 IST 2023","Sat Dec 23 01:13:16 IST 2023","27013","chromium","Forms\Login\screenshots\screenshot.spec.ts","Login Form on ultrawide FHD ","","","should be visible on ultrawide FHD",""
+"broken","Sat Dec 23 01:09:13 IST 2023","Sat Dec 23 01:11:17 IST 2023","124304","chromium","Forms\Login\screenshots\screenshot.spec.ts","Login Form on MacBook Air 2020 13 ","","","should be visible on MacBook Air 2020 13",""
+"passed","Sat Dec 23 01:12:04 IST 2023","Sat Dec 23 01:12:51 IST 2023","46806","chromium","Forms\Login\screenshots\screenshot.spec.ts","Login Form on Desktop Edge HiDPI ","","","should be visible on Desktop Edge HiDPI",""
+"passed","Sat Dec 23 01:11:29 IST 2023","Sat Dec 23 01:12:02 IST 2023","32677","chromium","Forms\Login\screenshots\screenshot.spec.ts","Login Form on Desktop Safari ","","","should be visible on Desktop Safari",""

@@ -35,7 +35,8 @@ for (const device of largeScreen) {
     const orderAS588 = new AS588_Order_Section(page);
     await orderAS588.AS588OrderSection("1", "1");
     await orderAS588.Add_AS588_To_Cart().click();
-    await page.locator(".icon-close").click();
+    await page.waitForSelector('div > .icon_container__SL1SC');
+    await page.locator('.icon-close').click();
     await page.getByRole("link", { name: "Link to cart page Cart" }).click();
     await page.waitForTimeout(2000);
     await testInfo.attach(`AS588_addtocart_${device.name}.jpeg`, {

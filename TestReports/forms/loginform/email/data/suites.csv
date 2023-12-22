@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sat Dec 23 01:15:18 IST 2023","Sat Dec 23 01:16:32 IST 2023","74754","chromium","Forms\Login\username\username.spec.ts","Login Form on Macbook Pro 15 ","","","should not login, due to incomplete email Macbook Pro 15",""
+"passed","Sat Dec 23 01:14:21 IST 2023","Sat Dec 23 01:15:18 IST 2023","56919","chromium","Forms\Login\username\username.spec.ts","Login Form on Microsoft Surface ","","","should not login, due to incomplete email Microsoft Surface",""
+"passed","Sat Dec 23 01:15:31 IST 2023","Sat Dec 23 01:16:13 IST 2023","42556","chromium","Forms\Login\username\username.spec.ts","Login Form on Desktop Safari ","","","should not login, due to incomplete email Desktop Safari",""
+"passed","Sat Dec 23 01:16:13 IST 2023","Sat Dec 23 01:16:59 IST 2023","45204","chromium","Forms\Login\username\username.spec.ts","Login Form on Desktop Edge HiDPI ","","","should not login, due to incomplete email Desktop Edge HiDPI",""
+"passed","Sat Dec 23 01:14:21 IST 2023","Sat Dec 23 01:15:31 IST 2023","70079","chromium","Forms\Login\username\username.spec.ts","Login Form on MacBook Air 2020 13 ","","","should not login, due to incomplete email MacBook Air 2020 13",""
+"passed","Sat Dec 23 01:16:59 IST 2023","Sat Dec 23 01:17:28 IST 2023","28794","chromium","Forms\Login\username\username.spec.ts","Login Form on ultrawide FHD ","","","should not login, due to incomplete email ultrawide FHD",""
+"passed","Sat Dec 23 01:16:32 IST 2023","Sat Dec 23 01:17:13 IST 2023","40827","chromium","Forms\Login\username\username.spec.ts","Login Form on Desktop Chrome ","","","should not login, due to incomplete email Desktop Chrome",""

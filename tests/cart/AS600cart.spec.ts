@@ -17,7 +17,7 @@ test.beforeEach("teardown Context", async () => {
 for (const device of largeScreen) {
   
 
-  test(`AS580 ViewCart Order Page on device ${device.name} `, async ({}, testInfo) => {
+  test(`AS600 ViewCart Order Page on device ${device.name} `, async ({}, testInfo) => {
     /**
      * @Epic Add to Cart
      * @Feature place order
@@ -36,13 +36,13 @@ for (const device of largeScreen) {
     const orderAS600 = new AS600_Order_Section(page);
     await orderAS600.AS600OrderSection("1", "1", "1", "1", "1");
     await orderAS600.Add_AS600_To_Cart().click();
-    await page.waitForTimeout(300);
+    await page.waitForSelector('div > .icon_container__SL1SC');
+    await page.locator('.icon-close').click();
     await page.getByRole("link", { name: "Link to cart page Cart" }).click();
-    await page.waitForLoadState("domcontentloaded");
-
-    await testInfo.attach(`AS600_addtocart_${device.name}.jpeg`, {
+    await page.waitForTimeout(2000);
+    await testInfo.attach(`AS600_addtocart_${device.name}.png`, {
       body: await page.screenshot(),
-      contentType: "image/jpeg",
+      contentType: "image/png",
     });
     await page.pause();
   });

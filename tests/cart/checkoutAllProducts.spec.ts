@@ -11,11 +11,12 @@ import DiscountCoupanPopup from "../Objects/Shared/Popups/modal";
 
 process.env.ALLURE_RESULTS_DIR = "raw-test-data/checkout/checkoutAllProducts";
 
-for (const device of largeScreen) {
-  test.beforeEach("teardown Context", async () => {
-    await teardownTest();
-  });
+test.beforeEach("teardown Context", async () => {
+  await teardownTest();
+});
 
+for (const device of largeScreen) {
+ 
   test(`proceed to checkout from Order Page on device ${device.name} `, async ({}, testInfo) => {
     /**
      * @Epic Add to Cart
