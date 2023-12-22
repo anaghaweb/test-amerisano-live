@@ -3,10 +3,10 @@ import AS580_Order_Section from "../../Objects/Forms/AS580-order";
 import AS588_Order_Section from "../../Objects/Forms/AS588-order";
 import AS600_Order_Section from "../../Objects/Forms/AS600-order";
 import OrderPage from "../../Objects/Pages/orderPage/goto-OrderPage";
-import BetterPricingSection from "../../Objects/Pages/orderPage/goto-section-betterPricing";
+import BetterPricingSection from "../../Objects/Pages/common/goto-section-betterPricing";
 import { setupTest, teardownTest, getPage } from "../../SetupTest/setupTest";
 import { largeScreen } from "../../Context/largeScreen";
-import ClientReviewSection from "../../Objects/Pages/orderPage/goto-section-Testimonials";
+import ClientReviewSection from "../../Objects/Pages/common/goto-section-Testimonials";
 import ContactUs_Form from "../../Objects/Pages/orderPage/goto-section-contactus";
 
 process.env.ALLURE_RESULTS_DIR = "raw-test-data/pages/orderpage";

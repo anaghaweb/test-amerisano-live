@@ -10,9 +10,7 @@ export const largeScreen = [
     {
         name: "Desktop Edge HiDPI",
     },
-    // {
-    //     name: "Desktop Firefox",
-    // },
+    
     {
         name: "Desktop Chrome",
     },
@@ -22,4 +20,7 @@ export const largeScreen = [
         width: 2560,
         height: 1080,
     },
+    // {
+    //     name: "Desktop Firefox",
+    // },
 ];

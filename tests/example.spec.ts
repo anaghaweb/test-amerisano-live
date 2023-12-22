@@ -4,8 +4,12 @@ test.describe("recordlocator", () => {
   const { chromium, webkit, firefox } = require("playwright");
 
   test("testinglocator", async ({ page }) => {
-    
-    
+    //Freebox page
+   
 
+    
+    
+    
+  
   });
 });
