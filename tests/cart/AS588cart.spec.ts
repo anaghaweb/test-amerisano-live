@@ -1,12 +1,9 @@
 import { test, expect } from "@playwright/test";
-import AS580_Order_Section from "../Objects/Forms/AS580-order";
-import AS588_Order_Section from "../Objects/Forms/AS588-order";
-import AS600_Order_Section from "../Objects/Forms/AS600-order";
-import Cart_Close_Btn from "../Objects/Shared/Buttons/Close-Cart-Btn";
-import Proceed_To_Checkout_Btn from "../Objects/Shared/Buttons/Proceed-To-Checkout-Btn";
-import OrderPage from "../Objects/Pages/orderPage/goto-OrderPage";
-import { setupTest, teardownTest, getPage } from "../SetupTest/setupTest";
-import { largeScreen } from "../Context/largeScreen";
+import { AS580_Order_Section, AS588_Order_Section, AS600_Order_Section} from "../../Objects/Forms/index";
+import { Cart_Close_Btn, Proceed_To_Checkout_Btn } from "../../Objects/Shared";
+import { OrderPage } from "../../Objects/Pages";
+import { setupTest, teardownTest, getPage } from '../../SetupTest/setupTest';
+import { largeScreen } from "../../Context/largeScreen";
 
 process.env.ALLURE_RESULTS_DIR = "raw-test-data/cart/addtocart/AS588";
 

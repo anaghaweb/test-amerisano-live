@@ -6,18 +6,17 @@ test.describe("recordlocator", () => {
   test("testinglocator", async ({ page }) => {
     //Freebox page
    
-
-   await page.goto('https://www.amerisano.com/');
-    await page.goto('about:blank');
+    await page.goto('https://www.amerisano.com/order');
+    await page.getByRole('button', { name: 'Link to account page Log in' }).click();
    
-    await page.goto('https://www.amerisano.com/');
-    
-  await page.getByRole('button', { name: 'Login' }).click();
-  //add a screenshot to enter complete email
-
-  await page.locator('form').filter({ hasText: 'Username or email address' }).locator('input[type="email"]').fill('abc@abc.com');
-  //assert for incorrect password entry
-  await page.getByRole('button', { name: 'Login' }).click();
-  await expect(page.locator('[id="__next"]')).toContainText('incorrect_password');
+    await page.getByRole('button', { name: 'Accept All' }).click();
+    await page.getByRole('link', { name: 'Forgot your password?' }).click();
+    await page.getByPlaceholder('email@example.com').click();
+    await page.getByPlaceholder('email@example.com').fill('abc@fake');
+    await page.locator('button').filter({ hasText: 'Reset password' }).click();
+    await expect(page.locator('button').filter({ hasText: 'Got it' })).toBeVisible();
+    await expect(page.locator('body')).toContainText('Done!An email with a link has been sent to your inbox. Please, follow the instructions to reset your password.(be sure to check your SPAM folder)If you didn\'t recieve any email pleaseContact us or send us a message at support@amerisano.comGot it');
+    await page.locator('button').filter({ hasText: 'Got it' }).click();
+   
   });
 });

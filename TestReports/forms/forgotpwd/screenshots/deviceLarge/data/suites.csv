@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sat Dec 23 17:11:55 IST 2023","Sat Dec 23 17:12:23 IST 2023","28209","chromium","forms\forgotpassword\screenshot\deviceLarge.spec.ts","Macbook Pro 15 viewport screenshot tests","","","screenshot on Macbook Pro 15",""
+"passed","Sat Dec 23 17:12:23 IST 2023","Sat Dec 23 17:12:53 IST 2023","29322","chromium","forms\forgotpassword\screenshot\deviceLarge.spec.ts","Desktop Edge HiDPI viewport screenshot tests","","","screenshot on Desktop Edge HiDPI",""
+"passed","Sat Dec 23 17:11:23 IST 2023","Sat Dec 23 17:11:56 IST 2023","32415","chromium","forms\forgotpassword\screenshot\deviceLarge.spec.ts","MacBook Air 2020 13 viewport screenshot tests","","","screenshot on MacBook Air 2020 13",""
+"passed","Sat Dec 23 17:12:49 IST 2023","Sat Dec 23 17:13:10 IST 2023","21512","chromium","forms\forgotpassword\screenshot\deviceLarge.spec.ts","ultrawide FHD viewport screenshot tests","","","screenshot on ultrawide FHD",""
+"passed","Sat Dec 23 17:11:56 IST 2023","Sat Dec 23 17:12:24 IST 2023","28302","chromium","forms\forgotpassword\screenshot\deviceLarge.spec.ts","Desktop Safari viewport screenshot tests","","","screenshot on Desktop Safari",""
+"passed","Sat Dec 23 17:11:24 IST 2023","Sat Dec 23 17:11:55 IST 2023","31464","chromium","forms\forgotpassword\screenshot\deviceLarge.spec.ts","Microsoft Surface viewport screenshot tests","","","screenshot on Microsoft Surface",""
+"passed","Sat Dec 23 17:12:24 IST 2023","Sat Dec 23 17:12:49 IST 2023","24453","chromium","forms\forgotpassword\screenshot\deviceLarge.spec.ts","Desktop Chrome viewport screenshot tests","","","screenshot on Desktop Chrome",""

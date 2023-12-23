@@ -1,8 +1,8 @@
 import { test, expect } from "@playwright/test";
-import { setupTest, teardownTest, getPage } from "../../../SetupTest/setupTest";
-import { largeScreen } from "../../../Context/largeScreen";
-import LoginForm from "../../../Objects/Forms/LoginForm";
-import Cookies from "../../../Objects/Shared/cookies/cookie";
+import { LoginForm } from "../../../../Objects/Forms";
+import { largeScreen } from "../../../../Context/largeScreen";
+import { setupTest,teardownTest, getPage  } from "../../../../SetupTest/setupTest";
+import { Cookies } from "../../../../Objects/Shared";
 
 process.env.ALLURE_RESULTS_DIR = "raw-test-data/forms/loginform/screenshot";
 

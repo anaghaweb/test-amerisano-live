@@ -1,13 +1,9 @@
 import { test, expect } from "@playwright/test";
-import AS580_Order_Section from "../../Objects/Forms/AS580-order";
-import AS588_Order_Section from "../../Objects/Forms/AS588-order";
-import AS600_Order_Section from "../../Objects/Forms/AS600-order";
-import OrderPage from "../../Objects/Pages/orderPage/goto-OrderPage";
-
-import { setupTest, teardownTest, getPage } from "../../SetupTest/setupTest";
-import { largeScreen } from "../../Context/largeScreen";
-
-import ContactUs_Form from "../../Objects/Pages/orderPage/goto-section-contactus";
+import {AS580_Order_Section,AS588_Order_Section,AS600_Order_Section} from "../../../Objects/Forms";
+import {OrderPage} from '../../../Objects/Pages/index';
+import { setupTest, teardownTest, getPage } from "../../../SetupTest/setupTest";
+import { largeScreen } from "../../../Context/largeScreen";
+import{ContactUs_Form}  from "../../../Objects/Pages/index";
 
 process.env.ALLURE_RESULTS_DIR = "raw-test-data/pages/orderpage";
 

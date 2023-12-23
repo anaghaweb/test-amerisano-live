@@ -27,7 +27,7 @@ exec( 'npx allure generate ../../raw-test-data/cart/addtocart/AS600 -o ../../Tes
 
 } );
 
-exec( 'npx allure generate ../../raw-test-data/checkout/allskustocart -o ../../TestReports/checkout/allskustocart --clean', ( error, stdout, stderr ) => {
+exec( 'npx allure generate ../../raw-test-data/checkout/allskutocart -o ../../TestReports/checkout/allskutocart --clean', ( error, stdout, stderr ) => {
     if ( error ) {
         console.error( `Error: ${ error.message }` );
         return;

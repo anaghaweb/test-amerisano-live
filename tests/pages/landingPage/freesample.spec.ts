@@ -1,10 +1,8 @@
 import { test, expect } from "@playwright/test";
-import { setupTest, teardownTest, getPage } from "../../SetupTest/setupTest";
-import { largeScreen } from "../../Context/largeScreen";
-import BetterPricingSection from "../../Objects/Pages/common/goto-section-betterPricing";
-import SpecialTraits from "../../Objects/Pages/common/goto-section-specialTraits";
-import ClientReviewSection from "../../Objects/Pages/common/goto-section-Testimonials";
-import Footer_Section from "../../Objects/Pages/common/goto-section-footer";
+import { setupTest, teardownTest, getPage } from '../../../SetupTest/setupTest'
+import { largeScreen } from "../../../Context/largeScreen";
+import { BetterPricingSection,SpecialTraits,ClientReviewSection, Footer_Section } from "../../../Objects/Shared";
+
 
 process.env.ALLURE_RESULTS_DIR = "raw-test-data/pages/landingpages/freesample";
 
