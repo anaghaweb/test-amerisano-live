@@ -2,7 +2,7 @@ import { test, expect } from "@playwright/test";
 import { setupTest, teardownTest, getPage } from '../../../SetupTest/setupTest'
 import { largeScreen } from "../../../Context/largeScreen";
 import { BetterPricingSection,SpecialTraits,ClientReviewSection, Footer_Section } from "../../../Objects/Shared";
-
+import { Cookies } from "../../../Objects/Shared";
 
 process.env.ALLURE_RESULTS_DIR = "raw-test-data/pages/landingpages/freesample";
 
@@ -20,6 +20,8 @@ for (const device of largeScreen) {
       await expect(
         page.locator(".amerisano-homepage__banner-container")
       ).toBeVisible();
+      const cookie_pom = new Cookies(page);
+      await cookie_pom.Accept_Cookies();
       await expect(page.locator(".banner-section__container")).toBeVisible();
       //text assertion
       await page

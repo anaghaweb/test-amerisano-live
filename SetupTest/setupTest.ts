@@ -30,7 +30,9 @@ export async function teardownTest() {
     await page.close();
     await context.close();
     await browser.close();
+    
   }
+  
 }
 
 export function getPage(): Page {

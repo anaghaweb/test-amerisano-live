@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sun Dec 24 15:20:22 IST 2023","Sun Dec 24 15:20:55 IST 2023","32605","chromium","forms\freesample\screenshot\deviceLarge.spec.ts","Macbook Pro 15 freeSampleForm Screenshots","","","screenshot taken on Macbook Pro 15",""
+"passed","Sun Dec 24 15:19:39 IST 2023","Sun Dec 24 15:20:24 IST 2023","45461","chromium","forms\freesample\screenshot\deviceLarge.spec.ts","MacBook Air 2020 13 freeSampleForm Screenshots","","","screenshot taken on MacBook Air 2020 13",""
+"passed","Sun Dec 24 15:20:55 IST 2023","Sun Dec 24 15:21:44 IST 2023","49112","chromium","forms\freesample\screenshot\deviceLarge.spec.ts","Desktop Edge HiDPI freeSampleForm Screenshots","","","screenshot taken on Desktop Edge HiDPI",""
+"passed","Sun Dec 24 15:19:39 IST 2023","Sun Dec 24 15:20:22 IST 2023","43494","chromium","forms\freesample\screenshot\deviceLarge.spec.ts","Microsoft Surface freeSampleForm Screenshots","","","screenshot taken on Microsoft Surface",""
+"passed","Sun Dec 24 15:20:24 IST 2023","Sun Dec 24 15:21:04 IST 2023","39870","chromium","forms\freesample\screenshot\deviceLarge.spec.ts","Desktop Safari freeSampleForm Screenshots","","","screenshot taken on Desktop Safari",""
+"passed","Sun Dec 24 15:21:04 IST 2023","Sun Dec 24 15:21:43 IST 2023","39302","chromium","forms\freesample\screenshot\deviceLarge.spec.ts","Desktop Chrome freeSampleForm Screenshots","","","screenshot taken on Desktop Chrome",""
+"passed","Sun Dec 24 15:21:43 IST 2023","Sun Dec 24 15:22:07 IST 2023","23499","chromium","forms\freesample\screenshot\deviceLarge.spec.ts","ultrawide FHD freeSampleForm Screenshots","","","screenshot taken on ultrawide FHD",""
