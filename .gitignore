@@ -4,8 +4,6 @@ node_modules/
 /blob-report/
 /playwright/.cache/
 /raw-test-data/
-/test-results/
-/playwright-report/
 /blob-report/
 /playwright/.cache/
-/raw-test-data/
+
