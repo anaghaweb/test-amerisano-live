@@ -47,7 +47,7 @@ as600XL=()=>this.page.locator('li').filter({ hasText: 'XL - Extra Large' }).nth(
     option1=()=>this.page.locator('div').filter({ hasText: /^Yes, someone else does the purchasing for me$/ }).locator('span').nth(1);
     option2=()=>this.page.locator('div').filter({ hasText: /^No, I will provide feedback and place the order myself$/ }).locator('span').nth(1);
     feedback=()=>this.page.locator('div').filter({ hasText: /^I will give feedback once I try the gloves$/ }).locator('div');
-    sendSample=()=>this.page.getByRole('button', { name: 'SEND ME A FREE BOX NOW' });
+    sendSamplebtn=()=>this.page.getByRole('button', { name: 'SEND ME A FREE BOX NOW' });
 
 
 /**
@@ -102,9 +102,9 @@ async chooseSizeAS580(){
   async willGiveFeedback(){
     await this.feedback().click();
   }
-    async sendFreeSampleButton()
+    async sendFreeSample()
     {
-      await this.sendSample().click();
+      await this.sendSamplebtn().click();
     }
 }
 
