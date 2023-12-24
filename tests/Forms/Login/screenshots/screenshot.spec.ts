@@ -1,5 +1,5 @@
 import { test, expect } from "@playwright/test";
-import { LoginForm } from "../../../../Objects/Forms";
+import { LoginForm } from "../../../../Objects/forms";
 import { largeScreen } from "../../../../Context/largeScreen";
 import { setupTest,teardownTest, getPage  } from "../../../../SetupTest/setupTest";
 import { Cookies } from "../../../../Objects/Shared";

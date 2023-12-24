@@ -2,7 +2,7 @@ import { test, expect } from "@playwright/test";
 import { largeScreen } from "../../../../Context/largeScreen";
 import { setupTest,teardownTest, getPage  } from "../../../../SetupTest/setupTest";
 import { Cookies } from "../../../../Objects/Shared";
-import ForgotPwdForm from "../../../../Objects/Forms/forgotpwd";
+import {ForgotPwdForm} from "../../../../Objects/forms";
 
 
 test.beforeEach(async () => {

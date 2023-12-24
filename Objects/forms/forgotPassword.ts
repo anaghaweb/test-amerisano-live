@@ -2,6 +2,7 @@ import { Page,expect } from "@playwright/test";
 
 class ForgotPwdForm{
     readonly page: Page;
+    
     constructor(page: Page){
         this.page = page;
     }
@@ -45,7 +46,6 @@ class ForgotPwdForm{
         await this.page.waitForTimeout(300);
         await expect(this.formmodal()).toBeHidden();
     }
-
 
 }
 

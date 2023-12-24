@@ -7,7 +7,7 @@ import {
 } from "../../../../SetupTest/setupTest";
 import { Cookies } from "../../../../Objects/Shared";
 import {  GotoLandingPage } from "../../../../Objects/Pages";
-import FreeSampleForm from "../../../../Objects/forms/freesample";
+import {FreeSampleForm} from "../../../../Objects/forms";
 
 const testdata = {
   firstname: "john",

@@ -1,7 +1,7 @@
 import { test } from "@playwright/test";
 import { largeScreen } from "../../../Context/largeScreen";
 import { setupTest, teardownTest, getPage } from "../../../SetupTest/setupTest";
-import { CreateAccountForm } from "../../../Objects/Forms";
+import { CreateAccountForm } from "../../../Objects/forms";
 
 process.env.ALLURE_RESULTS_DIR = "raw-test-data/forms/caform";
 
