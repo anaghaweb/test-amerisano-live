@@ -5,7 +5,8 @@
 }
 
 .main-reports{
-    height:100dvh;
+    min-height:100dvh;
+    height:auto;
     border:1px solid grey;
     display: flex;
     flex-direction: column;
@@ -28,7 +29,7 @@ h1{
 }
 
 h5{
-font-size: 15px; 
+font-size: 16px; 
     margin-top: 0.2rem;
     margin-bottom: 0.2rem;
     color:#23272F;
@@ -43,10 +44,10 @@ h6{
 
 li{
     color:#404756;
-    font-size: 13px;
+    font-size: 14px;
     list-style: none;
     padding: 0;
     margin-left: 10px;
-    margin-top: 0.2rem;
-    margin-bottom: 0.2rem;;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;;
 }
