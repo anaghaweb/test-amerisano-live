@@ -42,6 +42,8 @@ for (const device of largeScreen) {
      // await fs_pom.chooseSizeAS580();
       await fs_pom.fillGeneralInfo(testdata);
       await fs_pom.fillState();
+      await fs_pom.submitInfo();
+      await page.waitForTimeout(200);
       await testInfo.attach(`warningtext_${device.name}.png`, {
         body: await page.screenshot(),
         contentType: "image/png",

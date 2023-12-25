@@ -28,21 +28,25 @@ h1{
 }
 
 h5{
-font-size: 1.3rem; 
+font-size: 15px; 
     margin-top: 0.2rem;
     margin-bottom: 0.2rem;
-    color:#424242;
+    color:#23272F;
 }
 h6{
     font-size: 1.1rem; 
     margin-top: 0.2rem;
     margin-bottom: 0.2rem;
-    color:#424242;
+    color:#087EA4;
 }
 
 
 li{
+    color:#404756;
+    font-size: 13px;
     list-style: none;
     padding: 0;
     margin-left: 10px;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;;
 }
