@@ -5,4 +5,4 @@ export {default as SpecialTraits} from "./sections/specialtraits/goto-section-sp
 export {default as Footer_Section} from "./sections/footer/goto-section-footer";
 export {default as BetterPricingSection} from "./sections/betterpricing/goto-section-betterPricing";
 export {default as Cookies} from "./cookies/cookie";
-export {default as Popup} from "./Popups/modal";
+export {default as DiscountCoupanPopup} from "./Popups/modal";

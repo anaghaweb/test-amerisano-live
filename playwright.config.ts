@@ -24,6 +24,8 @@ export default defineConfig({
     // ["line"],
     // ["html", { open: "never", outputFolder: "playwright-report" }],
     // ["json", { outputDir: "json-reports" }],
+    ['blob', { outputDir: 'blob-report' }],
+    ['json', { outputFile: 'results.json' }],
     ["allure-playwright", { detail: true }],
   ],
   timeout: 90000,
