@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Dec 27 00:16:07 IST 2023","Wed Dec 27 00:16:52 IST 2023","44076","chromium","forms\paymentMethod\creditcard\newBillingAddress.spec.ts","","","","billing & shipping address should be different MacBook Air 2020 13",""
+"passed","Wed Dec 27 00:17:34 IST 2023","Wed Dec 27 00:18:14 IST 2023","40503","chromium","forms\paymentMethod\creditcard\newBillingAddress.spec.ts","","","","billing & shipping address should be different Macbook Pro 15",""
+"passed","Wed Dec 27 00:16:52 IST 2023","Wed Dec 27 00:17:34 IST 2023","42287","chromium","forms\paymentMethod\creditcard\newBillingAddress.spec.ts","","","","billing & shipping address should be different Microsoft Surface",""
+"passed","Wed Dec 27 00:20:22 IST 2023","Wed Dec 27 00:21:04 IST 2023","42303","chromium","forms\paymentMethod\creditcard\newBillingAddress.spec.ts","","","","billing & shipping address should be different ultrawide FHD",""
+"passed","Wed Dec 27 00:18:56 IST 2023","Wed Dec 27 00:19:38 IST 2023","41877","chromium","forms\paymentMethod\creditcard\newBillingAddress.spec.ts","","","","billing & shipping address should be different Desktop Safari",""
+"passed","Wed Dec 27 00:19:38 IST 2023","Wed Dec 27 00:20:22 IST 2023","43473","chromium","forms\paymentMethod\creditcard\newBillingAddress.spec.ts","","","","billing & shipping address should be different Desktop Edge HiDPI",""
+"passed","Wed Dec 27 00:18:14 IST 2023","Wed Dec 27 00:18:56 IST 2023","41943","chromium","forms\paymentMethod\creditcard\newBillingAddress.spec.ts","","","","billing & shipping address should be different Desktop Chrome",""

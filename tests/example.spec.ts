@@ -4,9 +4,9 @@ import { largeScreen } from "../Context/largeScreen";
 import centerElementOnScreen from "./centering";
 import { Cookies } from "../Objects/Shared";
 
-test.beforeEach("teardown", async () => {
-  await teardownTest();
-});
+// test.beforeEach("teardown", async () => {
+//   await teardownTest();
+// });
 
 // for (const device of largeScreen) {
 //   test.describe("recordlocator", () => {
@@ -38,8 +38,6 @@ test.beforeEach("teardown", async () => {
 //   });
 // }
 test('record', async({page})=>{
-
-
-
-
+await page.getByRole('button', { name: 'Place order' }).click();
+await page.getByRole('heading', { name: 'Pay with PayPal' });
 })

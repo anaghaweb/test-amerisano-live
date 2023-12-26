@@ -11,7 +11,7 @@ class DiscountCoupanPopup {
     //ACTIONS locator('.modal_close__nC_6v')
        async closeModal(){
      await this.page.mouse.move(-1000, -1000);
-     await this.page.waitForTimeout(2000); 
+     await this.page.waitForTimeout(3000);
      const result = await expect(this.discountCoupan()).toBeVisible()
       if(result !== null){
         console.log("discount coupon visible")

@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Dec 27 00:31:36 IST 2023","Wed Dec 27 00:32:17 IST 2023","40616","chromium","forms\paymentMethod\creditcard\sameBillingAddress.spec.ts","","","","billing & shipping address should be same Desktop Edge HiDPI",""
+"passed","Wed Dec 27 00:30:58 IST 2023","Wed Dec 27 00:31:36 IST 2023","38467","chromium","forms\paymentMethod\creditcard\sameBillingAddress.spec.ts","","","","billing & shipping address should be same Desktop Safari",""
+"passed","Wed Dec 27 00:29:40 IST 2023","Wed Dec 27 00:30:19 IST 2023","38224","chromium","forms\paymentMethod\creditcard\sameBillingAddress.spec.ts","","","","billing & shipping address should be same Macbook Pro 15",""
+"passed","Wed Dec 27 00:28:23 IST 2023","Wed Dec 27 00:29:01 IST 2023","38672","chromium","forms\paymentMethod\creditcard\sameBillingAddress.spec.ts","","","","billing & shipping address should be same MacBook Air 2020 13",""
+"passed","Wed Dec 27 00:32:17 IST 2023","Wed Dec 27 00:32:57 IST 2023","40241","chromium","forms\paymentMethod\creditcard\sameBillingAddress.spec.ts","","","","billing & shipping address should be same ultrawide FHD",""
+"passed","Wed Dec 27 00:30:19 IST 2023","Wed Dec 27 00:30:58 IST 2023","39012","chromium","forms\paymentMethod\creditcard\sameBillingAddress.spec.ts","","","","billing & shipping address should be same Desktop Chrome",""
+"passed","Wed Dec 27 00:29:01 IST 2023","Wed Dec 27 00:29:40 IST 2023","39058","chromium","forms\paymentMethod\creditcard\sameBillingAddress.spec.ts","","","","billing & shipping address should be same Microsoft Surface",""

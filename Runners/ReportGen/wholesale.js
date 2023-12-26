@@ -6,7 +6,6 @@ exec( 'npx allure generate ../../raw-test-data/forms/wholesaleaccount/screenshot
         return;
     }
     console.log( `stdout: ${ stdout }` );
-
 } );
 exec( 'npx allure generate ../../raw-test-data/forms/wholesaleaccount/validation/requiredfields -o ../../TestReports/forms/wholesaleaccount/validation/requiredfields --clean', ( error, stdout, stderr ) => {
     if ( error ) {
@@ -14,5 +13,4 @@ exec( 'npx allure generate ../../raw-test-data/forms/wholesaleaccount/validation
         return;
     }
     console.log( `stdout: ${ stdout }` );
-
 } );

@@ -9,3 +9,4 @@ export {default as FreeSampleForm} from "./freeSample";
 export {default as GroupBuyingForm} from "./groupBuying";
 export {default as WholesaleForm} from "./wholesale";
 export {default as ShippingAddressForm} from "./shippingadd";
+export {default as PaymentMethodForm} from "./paymentmethod"

@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Dec 27 01:56:22 IST 2023","Wed Dec 27 01:57:01 IST 2023","39488","chromium","forms\paymentMethod\screenshot\initialRender\deviceLarge.spec.ts","","","","Payment Method Form screenshot initialrender ultrawide FHD",""
+"passed","Wed Dec 27 01:53:46 IST 2023","Wed Dec 27 01:54:24 IST 2023","38434","chromium","forms\paymentMethod\screenshot\initialRender\deviceLarge.spec.ts","","","","Payment Method Form screenshot initialrender Macbook Pro 15",""
+"passed","Wed Dec 27 01:54:24 IST 2023","Wed Dec 27 01:55:03 IST 2023","38533","chromium","forms\paymentMethod\screenshot\initialRender\deviceLarge.spec.ts","","","","Payment Method Form screenshot initialrender Desktop Chrome",""
+"passed","Wed Dec 27 01:55:41 IST 2023","Wed Dec 27 01:56:22 IST 2023","40430","chromium","forms\paymentMethod\screenshot\initialRender\deviceLarge.spec.ts","","","","Payment Method Form screenshot initialrender Desktop Edge HiDPI",""
+"passed","Wed Dec 27 01:52:26 IST 2023","Wed Dec 27 01:53:05 IST 2023","38445","chromium","forms\paymentMethod\screenshot\initialRender\deviceLarge.spec.ts","","","","Payment Method Form screenshot initialrender MacBook Air 2020 13",""
+"passed","Wed Dec 27 01:55:03 IST 2023","Wed Dec 27 01:55:41 IST 2023","38640","chromium","forms\paymentMethod\screenshot\initialRender\deviceLarge.spec.ts","","","","Payment Method Form screenshot initialrender Desktop Safari",""
+"passed","Wed Dec 27 01:53:05 IST 2023","Wed Dec 27 01:53:46 IST 2023","40786","chromium","forms\paymentMethod\screenshot\initialRender\deviceLarge.spec.ts","","","","Payment Method Form screenshot initialrender Microsoft Surface",""
