@@ -1,50 +1,45 @@
-import { test, expect } from "@playwright/test";
+import { test, expect, Locator, ElementHandle } from "@playwright/test";
+import { setupTest, teardownTest, getPage } from "../SetupTest/setupTest";
+import { largeScreen } from "../Context/largeScreen";
+import centerElementOnScreen from "./centering";
+import { Cookies } from "../Objects/Shared";
 
-test.describe("recordlocator", () => {
-  const { chromium, webkit, firefox } = require("playwright");
-
-  test("testinglocator", async ({ page }, testInfo) => {
-    //Freebox page
-    test.slow();
-    await page.goto("https://www.amerisano.com/order");
-    await page.getByRole("button", { name: "Accept All" }).click();
-    await page
-      .locator(
-        "div:nth-child(2) > .input_container__8yb9l > .input_data__fSFbO > .input_input__lyuFG"
-      )
-      .first()
-      .fill("1");
-    await page
-      .locator(
-        "div:nth-child(2) > .input_container__8yb9l > .input_data__fSFbO > .input_input__lyuFG"
-      )
-      .first()
-      .click();
-    await page.getByRole("button", { name: "ADD TO CART" }).first().click();
-    await page.getByRole("button", { name: "Proceed to Checkout" }).click();
-    await expect(page
-      .getByRole("link", { name: "Please add a shipping address" })).toBeVisible();
-      
-    page.on('dialog', async (dialog) => {
-      console.log(`Dialog message: ${dialog.message()}`);
-
-      // Close the dialog
-      await dialog.dismiss();
-    });
-
-  
-    await testInfo.attach(`screenshot`, {
-      body: await page.screenshot(),
-      contentType: "image/png",
-    });
-
-    await page.goto('https://www.amerisano.com/');
-await page.goto('https://www.amerisano.com/');
-
-  });
-
-
+test.beforeEach("teardown", async () => {
+  await teardownTest();
 });
 
+// for (const device of largeScreen) {
+//   test.describe("recordlocator", () => {
+//     test(`testinglocator for ${device.name} `, async ({ page }, testInfo) => {
+//       //Freebox page
+//       test.slow();
+//       setupTest({ device });
+//       //const page = getPage();
+//       //Go to the
+//       await page.goto("https://www.amerisano.com/order");
+//       const section = page.getByText('Full Product DetailsNitrile Exam Gloves | AS-588Medical-Grade, Silken Soft');
+//       const newcookie = new Cookies(page);
+//       await newcookie.Accept_Cookies()
+//       await section.evaluate((e) =>
+//         e.scrollIntoView({
+//           block: "center",
+//           inline: "center",
+//           behavior: "smooth",
+//         })
+//       );
+
+//       //await centerElementOnScreen(page, div);
+       
+//       await testInfo.attach("screenshot", {
+//         body: await page.screenshot(),
+//         contentType: "image/png",
+//       });
+//     });
+//   });
+// }
+test('record', async({page})=>{
 
 
+
+
+})

@@ -1,0 +1,9 @@
+ item out of stock
+item in stock, order qty of 1 nos filled for size    
+item in stock, order qty of 1 nos filled for size    
+item in stock, order qty of 1 nos filled for size    
+item in stock, order qty of 1 nos filled for size    
+modal visible
+MODAL button visible
+close button clicked
+modal closed

@@ -1,5 +1,5 @@
 import { test, expect } from "@playwright/test";
-import {AS580_Order_Section,AS588_Order_Section,AS600_Order_Section} from "../../../Objects/Forms";
+import {AS580_Order_Section,AS588_Order_Section,AS600_Order_Section} from "../../../Objects/forms";
 import {OrderPage} from '../../../Objects/Pages/index';
 import { setupTest, teardownTest, getPage } from "../../../SetupTest/setupTest";
 import { largeScreen } from "../../../Context/largeScreen";
