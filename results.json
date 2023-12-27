@@ -89,12 +89,12 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 32078,
+                      "duration": 31350,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-12-27T16:20:57.990Z",
+                      "startTime": "2023-12-27T18:21:44.901Z",
                       "attachments": [
                         {
                           "name": "check width on MacBook Air 2020 13",
@@ -140,12 +140,12 @@
                     {
                       "workerIndex": 1,
                       "status": "passed",
-                      "duration": 31379,
+                      "duration": 31817,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-12-27T16:20:57.936Z",
+                      "startTime": "2023-12-27T18:21:44.952Z",
                       "attachments": [
                         {
                           "name": "check width on Microsoft Surface",
@@ -189,14 +189,14 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
+                      "workerIndex": 0,
                       "status": "passed",
-                      "duration": 32795,
+                      "duration": 30462,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-12-27T16:21:29.483Z",
+                      "startTime": "2023-12-27T18:22:16.325Z",
                       "attachments": [
                         {
                           "name": "check width on Macbook Pro 15",
@@ -240,14 +240,14 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
+                      "workerIndex": 1,
                       "status": "passed",
-                      "duration": 31747,
+                      "duration": 33449,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-12-27T16:21:30.158Z",
+                      "startTime": "2023-12-27T18:22:16.853Z",
                       "attachments": [
                         {
                           "name": "check width on Desktop Chrome",
@@ -293,12 +293,12 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 30747,
+                      "duration": 30394,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-12-27T16:22:02.221Z",
+                      "startTime": "2023-12-27T18:22:46.971Z",
                       "attachments": [
                         {
                           "name": "check width on Desktop Safari",
@@ -344,12 +344,12 @@
                     {
                       "workerIndex": 1,
                       "status": "passed",
-                      "duration": 34189,
+                      "duration": 33861,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-12-27T16:22:02.368Z",
+                      "startTime": "2023-12-27T18:22:50.397Z",
                       "attachments": [
                         {
                           "name": "check width on Desktop Edge HiDPI",
@@ -395,12 +395,12 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 24225,
+                      "duration": 25179,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-12-27T16:22:33.204Z",
+                      "startTime": "2023-12-27T18:23:17.570Z",
                       "attachments": [
                         {
                           "name": "check width on ultrawide FHD",
@@ -430,8 +430,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2023-12-27T16:20:53.239Z",
-    "duration": 124696.841,
+    "startTime": "2023-12-27T18:21:40.119Z",
+    "duration": 123574.798,
     "expected": 7,
     "skipped": 0,
     "unexpected": 0,
