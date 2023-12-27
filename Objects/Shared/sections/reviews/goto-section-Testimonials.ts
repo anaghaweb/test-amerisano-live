@@ -22,6 +22,27 @@ class ClientReviewSection {
     await expect(page.locator('[id="__next"]')).toContainText('SEND ME A FREE BOX NOW!!!!');
     //ss
    */
+/**
+ * 
+ * 
+ * await page.locator('ol').getByRole('listitem').first().click();
+await expect(page.getByText('These are the gloves every dental practice needs.During the pandemic we saw the')).toBeVisible();
+await page.locator('ol').getByRole('listitem').nth(1).click();
+await expect(page.getByText('First time in my 10 years as a dentist.I’ve use gloves designed for dentistry.')).toBeVisible();
+await page.locator('ol').getByRole('listitem').nth(2).click();
+await expect(page.locator('.active > div > .d-flex > div')).toBeVisible();
+await page.locator('ol').getByRole('listitem').nth(3).click();
+await expect(page.getByText('Great pricing and great product.The gloves work out very well your prices are')).toBeVisible();
+await page.locator('ol').getByRole('listitem').first().click();
+await page.locator('ol').getByRole('listitem').nth(1).click();
+await page.locator('ol').getByRole('listitem').nth(2).click();
+await page.locator('ol').getByRole('listitem').nth(3).click();
+ */
+
+//Carousal Locators
+
+
+
   //Locators
   goto_client_reviews = () => this.page.getByText("What our clients sayDr. Mark");
   cr_heading=()=>this.page.getByText('What our clients say');

@@ -4,13 +4,17 @@ export const largeScreen = [
     { name: "Macbook Pro 15", width: 1440, height: 900 },
     {
         name: "Desktop Chrome",
+        width: 1920, height: 1080
     },
     {
         name: "Desktop Safari",
+        width: 1920, height: 1080
     },
+  
 
     {
         name: "Desktop Edge HiDPI",
+         width: 1280, height: 1024 
     },
     {
         name: "ultrawide FHD",
@@ -19,5 +23,6 @@ export const largeScreen = [
     },
     // {
     //     name: "Desktop Firefox",
+    //     width: 1920, height: 1080
     // },
 ];
