@@ -12,6 +12,7 @@
     padding: 0.5rem;
     font-family: Roboto,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',  Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     row-gap: 4px;
+    margin-bottom: 1rem;
 }
 
 .sidebar{
@@ -25,8 +26,8 @@
     font-family: Roboto,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',  Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
     row-gap: 4px;
     overflow-y: auto;
-    
-    
+    margin-bottom: 1rem;
+       
 }
 .filler{
     
@@ -69,6 +70,7 @@ li,a{
     padding: 8px;
     margin-left: 7px;
    letter-spacing: 0.2px;
+   margin-bottom:1px;
    
 }
 .sidebar::-webkit-scrollbar{
@@ -90,15 +92,17 @@ li.active, li:active{
 .report-window{
     display: flex;
     flex-grow: 1;
-    min-height: 100%;
+    min-height: 100dvh;
+    height:100%;
     width: 100%; /* Subtract the width of the sidebar */
     justify-content: flex-end;
+    
 }
 .reportframe{
-    height:100vh;
+    height:auto;
     min-height:100%;
     width:calc(100vw - 275px);
-    background-color: transparent;
+    background-color: #3cceff;
 }
 
 
