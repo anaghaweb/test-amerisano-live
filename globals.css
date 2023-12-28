@@ -66,7 +66,8 @@ li,a{
     list-style: none;
     padding: 8px;
     margin-left: 7px;
-   letter-spacing: 0.2px;  
+   letter-spacing: 0.2px; 
+   font-weight: 400; 
 }
 .sidebar::-webkit-scrollbar{
     width:8px;
@@ -80,11 +81,16 @@ li,a{
     background-color: #fff;
 }
 
-li.active, li:active{ 
-    color: #087ea4;
-    background-color: #e6f7ff;
-    border-radius: 10px;
-}
+li.active {
+    background-color: #e6F7FF;
+    border-radius: 15px;
+  }
+
+  li.active a {
+    color: #087EA4;
+    font-weight: 500;
+    
+  }
 
 .report-window{
     display: flex;
