@@ -7,7 +7,7 @@ class DiscountCoupanPopup {
     }
     //LOCATORS
     discountCoupan = ()=>this.page.locator('.modal_item__DwiZP');
-    closeCoupan = ()=>this.page.locator('.modal_close__nC_6v');
+    coupan_button_close = ()=>this.page.locator('.modal_close__nC_6v');
     //ACTIONS locator('.modal_close__nC_6v')
        async closeModal(){
      await this.page.mouse.move(-1000, -1000);
@@ -17,7 +17,7 @@ class DiscountCoupanPopup {
         console.log("discount coupon visible")
         await expect(this.page.locator('button').filter({ hasText: 'I WANT MY COUPON' })).toBeVisible();
        // console.log("modal button visible")
-        this.closeCoupan().click();
+        this.coupan_button_close().click();
        // console.log("close button clicked");
         await expect(this.discountCoupan()).toBeHidden();
         console.log("discount coupon modal closed");

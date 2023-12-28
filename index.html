@@ -15,14 +15,23 @@
     <div class="main-reports">
       <div class="sidebar">
       <h5>Amerisano Pages</h5>
+      <section>
+        <h5>Payment Method Form</h5>
+        <script>
+          const data = ['Address', 'Banner', 'Footer', 'Groupbuy', 'Ourstory','Product','Review'];
+          data.forEach( element=>{
+            document.write(`<li><a href="./TestReports/pages/homepage/screenshot/${element.toLowerCase()}/devicelarge/index.html" target="contentContainer">${element}</a></li>`)
+          })
+        </script>
+      </section>
      <li><a href="./TestReports/pages/orderpage/index.html" target="contentContainer"
       > Order Page</a
     ></li>
       <li><a href="./TestReports/pages/landingpages/freesample/index.html" target="contentContainer"
         >Freebox Page</a
       ></li>
-      <li><h5>Amerisano/Buy Sections</h5>
-        <li><a href="./TestReports/pages/landingpages/buy/screenshot/hero/devicelarge/index.html" target="contentContainer" onclick="changeColor(this.href); return false;">Hero Section</a></li>
+      <li><h5>Amerisano/Buy Page</h5>
+        <li><a href="./TestReports/pages/landingpages/buy/screenshot/hero/devicelarge/index.html" target="contentContainer">Hero Section</a></li>
         <li><a href="./TestReports/pages/landingpages/buy/screenshot/guarantee/devicelarge/index.html" target="contentContainer">Shipping Guarantee</a></li>
         <li><a href="./TestReports/pages/landingpages/buy/screenshot/as580/devicelarge/index.html" target="contentContainer">AS580</a></li>
         <li><a href="./TestReports/pages/landingpages/buy/screenshot/as588/devicelarge/index.html" target="contentContainer">AS588</a></li>
@@ -107,6 +116,7 @@
         <li><a href="./TestReports/forms/paymentmethod/paypal/samebillingaddress/index.html" target="contentContainer">Paypal Same Billing Address</a></li>
         <li></li>
       </li>
+      
     </div>
   </div>
   

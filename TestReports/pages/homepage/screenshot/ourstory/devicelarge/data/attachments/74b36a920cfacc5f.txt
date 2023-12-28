@@ -1,0 +1,2 @@
+discount coupon visible
+discount coupon modal closed

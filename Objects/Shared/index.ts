@@ -6,3 +6,8 @@ export {default as Footer_Section} from "./sections/footer/goto-section-footer";
 export {default as BetterPricingSection} from "./sections/betterpricing/goto-section-betterPricing";
 export {default as Cookies} from "./cookies/cookie";
 export {default as DiscountCoupanPopup} from "./Popups/modal";
+export {default as HeroBanner} from './sections/banner/banner';
+export {default as ProductSpecification} from './sections/productcards/card';
+export {default as OurStory} from './sections/ourstory/story';
+export {default as GroupBuying} from './sections/groupbuying/groupbuy';
+export {default as GoogleMapAddress} from './sections/googlemap/googlemap'

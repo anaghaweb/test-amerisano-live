@@ -7,43 +7,7 @@ class ClientReviewSection {
     this.page = page;
   }
 
-  /**
-   * 
-   * @returns await expect(page.getByText('What our clients sayDr. Mark')).toBeVisible();
-    await expect(page.locator('[id="__next"]')).toContainText('What our clients say');
-    await expect(page.locator('[id="__next"]')).toContainText('Dr. Mark Jumper DDS/Owner of Aloha Dental');
-    await expect(page.locator('.dentist_review__mAl3A > div').first()).toBeVisible();
-    await expect(page.locator('[id="__next"]')).toContainText('Dr. Mark Jumper DDS/Owner of Aloha DentalThese are the gloves every dental practice needs. During the pandemic we saw the prices go up and the quality go down. Thankfully we found high quality at a low price. THANK YOU!!');
-    await expect(page.locator('[id="__next"]')).toContainText('Dr. Stacy DavidsonFinding gloves today can be challenging and if you want to get them at a good price, good luck. We are lucky to have found wholesale prices for our dental office, as well as fast shipping and excellent customer service.');
-    await expect(page.locator('div:nth-child(2) > .dentist_review__mAl3A > div').first()).toBeVisible();
-    await expect(page.locator('[id="__next"]')).toContainText('Dr. Laurence WillisFirst time in my 10 years as a dentist that I’ve used gloves designed for dentistry. It’s great to see new innovations to a simple product! The feel is exactly what our team was looking for! We will continue to order. Thank you!');
-    await expect(page.locator('div:nth-child(3) > .dentist_review__mAl3A > div').first()).toBeVisible();
-    await expect(page.getByRole('link', { name: 'SEND ME A FREE BOX NOW!!!!' })).toBeVisible();
-    await expect(page.locator('[id="__next"]')).toContainText('SEND ME A FREE BOX NOW!!!!');
-    //ss
-   */
-/**
- * 
- * 
- * await page.locator('ol').getByRole('listitem').first().click();
-await expect(page.getByText('These are the gloves every dental practice needs.During the pandemic we saw the')).toBeVisible();
-await page.locator('ol').getByRole('listitem').nth(1).click();
-await expect(page.getByText('First time in my 10 years as a dentist.I’ve use gloves designed for dentistry.')).toBeVisible();
-await page.locator('ol').getByRole('listitem').nth(2).click();
-await expect(page.locator('.active > div > .d-flex > div')).toBeVisible();
-await page.locator('ol').getByRole('listitem').nth(3).click();
-await expect(page.getByText('Great pricing and great product.The gloves work out very well your prices are')).toBeVisible();
-await page.locator('ol').getByRole('listitem').first().click();
-await page.locator('ol').getByRole('listitem').nth(1).click();
-await page.locator('ol').getByRole('listitem').nth(2).click();
-await page.locator('ol').getByRole('listitem').nth(3).click();
- */
-
-//Carousal Locators
-
-
-
-  //Locators
+  //Order Page Locators
   goto_client_reviews = () => this.page.getByText("What our clients sayDr. Mark");
   cr_heading=()=>this.page.getByText('What our clients say');
   cr_review1=()=>this.page.getByText('Dr. Mark Jumper DDS/Owner of Aloha DentalThese are the gloves every dental practice needs. During the pandemic we saw the prices go up and the quality go down. Thankfully we found high quality at a low price. THANK YOU!!');
@@ -51,7 +15,15 @@ await page.locator('ol').getByRole('listitem').nth(3).click();
   cr_review3=()=>this.page.getByText('Dr. Laurence WillisFirst time in my 10 years as a dentist that I’ve used gloves designed for dentistry. It’s great to see new innovations to a simple product! The feel is exactly what our team was looking for! We will continue to order. Thank you!');
   cr_freebox_link=()=>this.page.getByRole('link', { name: 'SEND ME A FREE BOX NOW!!!!' });
 
-  //ACTIONS
+  //HomePage Locators
+  home_review_container=()=>this.page.locator('.styles_container__CaO9P');
+  //review Cards
+  card1=()=>this.page.getByText('Dr. Mark Jumper DDS | Aloha Dental“These are the gloves every dental practice').nth(1);
+  card2=()=>this.page.getByText('Dr. Stacy Davidson“Finding').nth(1);
+  card3=()=>this.page.getByText('Dr. Laurence Willis“First').nth(1);
+  card4=()=>this.page.getByText('Keevin Moore | DDS“Amerisano').nth(1);
+
+  //Methods
   async goto_clientReviewSection() {
     await this.goto_client_reviews().scrollIntoViewIfNeeded();
   }
@@ -63,6 +35,28 @@ await page.locator('ol').getByRole('listitem').nth(3).click();
     await expect(this.cr_review2()).toBeVisible();
     await expect(this.cr_review3()).toBeVisible();
     await expect(this.cr_freebox_link()).toBeVisible();
+  }
+
+  //Assert Home Page Review Slider Visible
+  async Assert_HomePage_Review_Section(){
+    await this.home_review_container().scrollIntoViewIfNeeded();
+    await this.card1().scrollIntoViewIfNeeded();
+    await expect(this.home_review_container()).toBeVisible();
+  }
+
+  //Card Visibility Assert
+  async Assert_ReviewCards_Visible(){
+    await this.card1().scrollIntoViewIfNeeded();
+    await expect(this.card1()).toBeVisible();
+
+    await this.card2().scrollIntoViewIfNeeded();
+    await expect(this.card2()).toBeVisible();
+
+    await this.card3().scrollIntoViewIfNeeded();
+    await expect(this.card3()).toBeVisible();
+
+    await this.card4().scrollIntoViewIfNeeded();
+    await expect(this.card4()).toBeVisible();
   }
 
 }
