@@ -32,6 +32,14 @@ class AS588_Order_Section {
 
   //Actions
 
+    //AS560
+
+    async AS588_Section_View() {
+
+      await this.page.getByText('Nitrile Exam Gloves | AS-588Medical-Grade, Silken Soft Touch, Extra easy').scrollIntoViewIfNeeded();
+      
+    }
+
   public async AS588OrderSection(s: string, m: string) {
     await this.AS588_section().scrollIntoViewIfNeeded();
     await this.AS588_heading().scrollIntoViewIfNeeded();

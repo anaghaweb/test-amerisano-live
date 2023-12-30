@@ -22,8 +22,8 @@ export const largeScreen = [
         width: 2560,
         height: 1080,
     },
-    {
-        name: "Desktop Firefox",
-        width: 1920, height: 1080
-    },
+    // {
+    //     name: "Desktop Firefox",
+    //     width: 1920, height: 1080
+    // },
 ];

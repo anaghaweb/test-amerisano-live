@@ -24,6 +24,11 @@ class AS600_Order_Section {
 
   //Actions
 
+  async AS600_Section_View() {
+    await this.page.getByText('Nitrile Exam Gloves | AS-600Chemo-Rated, Maximum strength and durabilityBox:').scrollIntoViewIfNeeded();
+    
+  }
+
   public async AddToCart() {
     await this.Add_AS600_To_Cart().click();
   }

@@ -4,8 +4,9 @@ import { Cart_Close_Btn, Proceed_To_Checkout_Btn } from "../../Objects/Shared";
 import { OrderPage } from "../../Objects/Pages";
 import { setupTest, teardownTest, getPage } from '../../SetupTest/setupTest';
 import { largeScreen } from "../../Context/largeScreen";
+import {Cookies} from "../../Objects/Shared";
 
-process.env.ALLURE_RESULTS_DIR = "raw-test-data/cart/addtocart/AS580";
+process.env.ALLURE_RESULTS_DIR = "raw-test-data/cart/addtocart/screenshot/AS580";
 
 for (const device of largeScreen) {
   test.beforeEach("teardown Context", async () => {
@@ -28,13 +29,15 @@ for (const device of largeScreen) {
      * @Step Locate Product
      */
     const closecart = new Cart_Close_Btn(page);
+    const cookie_pom = new Cookies(page);
+    cookie_pom.Accept_Cookies();
     const orderAS580 = new AS580_Order_Section(page);
     await orderAS580.AS580OrderSection("1", "1", "1", "1", "1");
     await orderAS580.Add_AS580_To_Cart().click();
     await page.waitForSelector('div > .icon_container__SL1SC');
     await page.locator('.icon-close').click();
     await page.getByRole("link", { name: "Link to cart page Cart" }).click();
-    await page.waitForTimeout(2000);
+    
     await testInfo.attach(`AS580_addtocart_${device.name}.jpeg`, {
       body: await page.screenshot(),
       contentType: "image/jpeg",

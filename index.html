@@ -3,128 +3,129 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width= device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./globals.css" />
+    <link rel="stylesheet" href="./styles/css/globals.css" />
+    <link rel="stylesheet" href="./styles/css/accordian.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-<script src="index.js"></script>   
+<script type="module" src="./styles/scripts/liststyles.js"></script>   
+<script type="module" src="./styles/scripts/accordian.js"></script>   
+<script type="module" src="./styles/scripts/content.js"></script>
+<script type="module" src="./styles/scripts/new.js"></script>
 
 <title>Test Reports</title>
   </head>
   <body>
     <div class="main-reports">
       <div class="sidebar">
-      <h5>Amerisano Pages</h5>
-      <section>
-        <h5>Home Page</h5>
-        <script>
-          const data = ['Address', 'Banner', 'Footer', 'Groupbuy', 'Ourstory','Product','Review'];
-          data.forEach( element=>{
-            document.write(`<li><a href="./TestReports/pages/homepage/screenshot/${element.toLowerCase()}/devicelarge/index.html" target="contentContainer">${element}</a></li>`)
-          })
-        </script>
+      <div class="section-title" >Amerisano Pages</div >
+      <!-- Home Page -->
+      <section class="accordion-block">
+        <div class="accordion-header" >Home </div>
+        <div id="homePageSection" class="accordion-body">
+       
+        </div>
       </section>
-     <li><a href="./TestReports/pages/orderpage/index.html" target="contentContainer"
-      > Order Page</a
-    ></li>
-      <li><a href="./TestReports/pages/landingpages/freesample/index.html" target="contentContainer"
-        >Freebox Page</a
-      ></li>
-      <li><h5>Amerisano/Buy Page</h5>
-        <li><a href="./TestReports/pages/landingpages/buy/screenshot/hero/devicelarge/index.html" target="contentContainer">Hero Section</a></li>
-        <li><a href="./TestReports/pages/landingpages/buy/screenshot/guarantee/devicelarge/index.html" target="contentContainer">Shipping Guarantee</a></li>
-        <li><a href="./TestReports/pages/landingpages/buy/screenshot/as580/devicelarge/index.html" target="contentContainer">AS580</a></li>
-        <li><a href="./TestReports/pages/landingpages/buy/screenshot/as588/devicelarge/index.html" target="contentContainer">AS588</a></li>
-        <li><a href="./TestReports/pages/landingpages/buy/screenshot/as600/devicelarge/index.html" target="contentContainer">AS600</a></li>
-        <li><a href="./TestReports/pages/landingpages/buy/screenshot/review/devicelarge/index.html" target="contentContainer">Review</a></li>
-        <li><a href="./TestReports/pages/landingpages/buy/screenshot/betterpricing/devicelarge/index.html" target="contentContainer">Better Pricing</a></li>
-        
-        <li><a href="./TestReports/pages/landingpages/buy/screenshot/footer/devicelarge/index.html" target="contentContainer">Footer</a></li>
-      </li>
+   
+      <!-- Order page -->
       
-      <h5>Cart Tests</h5>
-      <li><a href="./TestReports/cart/addtocart/AS580/index.html" target="contentContainer"
-        >Add AS580 to cart</a
-      ></li>
-      <li><a href="./TestReports/cart/addtocart/AS588/index.html" target="contentContainer"
-        >Add AS588 to cart </a
-      ></li>
-      <li><a href="./TestReports/cart/addtocart/AS600/index.html" target="contentContainer"
-        >Add AS600 to cart </a
-      ></li>
-      <li> <a href="./TestReports/checkout/allskutocart/index.html" target="contentContainer"
-        >Add all Skus to cart</a
-      ></li>
-     
+      <section class="accordion-block">
+        <div class="accordion-header" >Order </div>
+        <div id="orderPageSection" class="accordion-body"></div>
+      </section>
+      
+      <!-- <div >Amerisano Landing Pages</div > -->
+      <div class="section-title"  >Amerisano Landing Pages</div >
+      <!-- Free Sample -->
+      <section class="accordion-block">
+        <div class="accordion-header" >Free Sample</div>
+        <div id="freeboxSection" class="accordion-body"></div>
+      </section>
+     <!-- Buy -->
+      <section class="accordion-block">
+        <div class="accordion-header" >Buy</div>
+        <div id="buyLPSection" class="accordion-body">
+        </div>
+      </section>
 
-      <h5>Form Tests</h5>
-      <li><a href="./TestReports/forms/newinfo/index.html" target="contentContainer"
-        >New Info Form</a
-      ></li>
-      <li><a href="./TestReports/forms/accountcreation/index.html" target="contentContainer"
-        >Create Account Form</a
-      ></li>
-      <li><h5>Login Form </h5>
-        <li>
-          <a href="./TestReports/forms/loginform/email/index.html" target="contentContainer"
-        >UserName Test</a
-      >
-        </li>
-        <li>
-          <a href="./TestReports/forms/loginform/password/index.html" target="contentContainer"
-        >Password Test</a
-      >
-        </li>
-        <li>
-          <a href="./TestReports/forms/loginform/screenshot/index.html" target="contentContainer"
-        >Screenshot Test</a
-      >
-        </li>
-      </li>
-      <li><h5>Forgot Password Form</h5>
-        <li><a href="./TestReports/forms/forgotpwd/resetink/deviceLarge/index.html" target="contentContainer">Reset link confirmation test</a></li>
-        <li><a href="TestReports/forms/forgotpwd/screenshots/deviceLarge/index.html" target="contentContainer">Screenshot test</a></li>
-      </li> 
-      <li><h5>Free Sample Form</h5>
-        <li><a href="./TestReports/forms/freesample/screenshot/deviceLarge/index.html" target="contentContainer">Screenshot test</a></li>
-        <li><a href="./TestReports/forms/freesample/validation/feedback/index.html" target="contentContainer">Feedback check validation test</a></li>
-        <li><a href="./TestReports/forms/freesample/validation/glovesize/index.html" target="contentContainer">glovesize select validation test</a></li>
-        
-      </li> 
-      <li><h5>Group buying Form</h5>
-        <li><a href="./TestReports/forms/groupbuying/screenshot/deviceLarge/index.html" target="contentContainer">Screenshot</a></li>
-        <li><a href="./TestReports/forms/groupbuying//validation/inputfields/index.html" target="contentContainer">Required InputFields validation</a></li>
-                
-      </li>
-      <li><h5>WholeSale Account Form</h5>
-        <li><a href="./TestReports/forms/wholesaleaccount/screenshot/devicelarge/index.html" target="contentContainer">Screenshot</a></li>
-        <li><a href="./TestReports/forms/wholesaleaccount/validation/requiredfields/index.html" target="contentContainer">Required InputFields validation</a></li>       
-      </li>
-      <li><h5>Shipping Adress Form</h5>
-        <li><a href="./TestReports/forms/shipadd/screenshot/index.html" target="contentContainer">Screenshot</a></li>
-        <li><a href="./TestReports/forms/shipadd/formfilled/index.html" target="contentContainer">All fields filled</a></li>
-        <li><a href="./TestReports/forms/shipadd/validation/emptyfields/index.html" target="contentContainer">Required Fields Empty</a></li>
-        <li><a href="./TestReports/forms/shipadd/validation/submitsuccess/index.html" target="contentContainer">Successful submission</a></li> 
-      </li>
-      <li><h5>Payment Method Form</h5>
-        <li><a href="./TestReports/forms/paymentmethod/screenshot/initialrender/deviceLarge/index.html" target="contentContainer">Initial Render</a></li>
-        <li><a href="./TestReports/forms/paymentmethod/screenshot/creditcard/deviceLarge/index.html" target="contentContainer">Creditcard</a></li>
-        <li><a href="./TestReports/forms/paymentmethod/screenshot/paypal/deviceLarge/index.html" target="contentContainer">PayPal</a></li>
-        <li><a href="./TestReports/forms/paymentmethod/creditcard/newbillingaddress/index.html" target="contentContainer">Credicard New Billing Address</a></li>
-        <li><a href="./TestReports/forms/paymentmethod/creditcard/samebillingaddress/index.html" target="contentContainer">Creditcard Same Billing Address</a></li>
-        <li><a href="./TestReports/forms/paymentmethod/paypal/newbillingaddress/index.html" target="contentContainer">Paypal New Billing Address</a></li>
-        <li><a href="./TestReports/forms/paymentmethod/paypal/samebillingaddress/index.html" target="contentContainer">Paypal Same Billing Address</a></li>
-        <li></li>
-      </li>
+      <!-- Cart Tests -->
+            <div class="section-title" >Cart Tests</div >
+            <section class="accordion-block">
+              <div class="accordion-header" >All Tests</div>
+              <div id="cartSection" class="accordion-body">
+              </div>
+            </section>
+
+            <!-- Form Tests -->
+  
+      <div class="section-title" >Form Tests</div >
+
+        <!-- Need More Info Form -->
+        <section class="accordion-block">
+          <div class="accordion-header" >Need More Info</div>
+          <div id="needInfoForm" class="accordion-body">
+          </div>
+        </section>
       
+
+        <!-- Create Account Form -->
+
+        <section class="accordion-block">
+          <div class="accordion-header" >Create Account</div>
+          <div id="createAccFrom" class="accordion-body">
+          </div>
+        </section>
+
+      <!-- Login Form -->
+
+      <section class="accordion-block">
+        <div class="accordion-header" >Login Form</div>
+        <div id="loginFormSect" class="accordion-body">
+        </div>
+      </section>
+
+      <section class="accordion-block">
+        <div class="accordion-header" >Forgot Password</div>
+        <div id="forgotPwdform" class="accordion-body">
+        </div>
+      </section>
+
+      <section class="accordion-block">
+        <div class="accordion-header" >Free Sample Form</div>
+        <div id="freeSampleForm" class="accordion-body">
+        </div>
+      </section>
+      
+      <section class="accordion-block">
+        <div class="accordion-header" >Group buying Form</div>
+        <div id="groupBuyingForm" class="accordion-body">
+        </div>
+      </section>
+
+      <section class="accordion-block">
+        <div class="accordion-header" >Wholesale Form</div>
+        <div id="wholesaleForm" class="accordion-body">
+        </div>
+      </section>
+
+      <section class="accordion-block">
+        <div class="accordion-header" >Shipping Address Form</div>
+        <div id="shippingAddForm" class="accordion-body">
+        </div>
+      </section>
+
+      <section class="accordion-block">
+        <div class="accordion-header" >Payment Method Form</div>
+        <div id="paymentMethodForm" class="accordion-body">
+        </div>
+      </section>  
     </div>
   </div>
-  
     <div class="report-window">
       <iframe name="contentContainer" src="" class="reportframe" height="100%" frameBorder="0"></iframe >
-    </div>  
-    
-    
+    </div>   
   </body>
 </html>
+
+
 

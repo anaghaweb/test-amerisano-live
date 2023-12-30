@@ -1,11 +1,12 @@
 import { test, expect } from "@playwright/test";
-import { AS580_Order_Section, AS588_Order_Section, AS600_Order_Section} from "../../Objects/forms";
-import { Cart_Close_Btn, Proceed_To_Checkout_Btn } from "../../Objects/Shared";
+import { AS600_Order_Section} from "../../Objects/forms";
+import { Cart_Close_Btn } from "../../Objects/Shared";
 import { OrderPage } from "../../Objects/Pages";
 import { setupTest, teardownTest, getPage } from '../../SetupTest/setupTest';
 import { largeScreen } from "../../Context/largeScreen";
+import {Cookies} from "../../Objects/Shared";
 
-process.env.ALLURE_RESULTS_DIR = "raw-test-data/cart/addtocart/AS600";
+process.env.ALLURE_RESULTS_DIR = "raw-test-data/cart/addtocart/screenshot/AS600";
 
 test.beforeEach("teardown Context", async () => {
   await teardownTest();
@@ -14,7 +15,7 @@ test.beforeEach("teardown Context", async () => {
 for (const device of largeScreen) {
   
 
-  test(`AS600 ViewCart Order Page on device ${device.name} `, async ({}, testInfo) => {
+  test(`Add AS600 to cart on ${device.name} `, async ({}, testInfo) => {
     /**
      * @Epic Add to Cart
      * @Feature place order
@@ -29,14 +30,16 @@ for (const device of largeScreen) {
     /**
      * @Step Locate Product
      */
-    const closecart = new Cart_Close_Btn(page);
+    
     const orderAS600 = new AS600_Order_Section(page);
+    const cookie_pom = new Cookies(page);
+    cookie_pom.Accept_Cookies();
     await orderAS600.AS600OrderSection("1", "1", "1", "1", "1");
     await orderAS600.Add_AS600_To_Cart().click();
     await page.waitForSelector('div > .icon_container__SL1SC');
     await page.locator('.icon-close').click();
     await page.getByRole("link", { name: "Link to cart page Cart" }).click();
-    await page.waitForTimeout(2000);
+    
     await testInfo.attach(`AS600_addtocart_${device.name}.png`, {
       body: await page.screenshot(),
       contentType: "image/png",

@@ -1,37 +1,15 @@
 const { exec } = require( "child_process" );
 
-// exec( 'npx allure generate ../../raw-test-data/cart/addtocart/AS580 -o ../../TestReports/cart/addtocart/AS580 --clean', ( error, stdout, stderr ) => {
-//     if ( error ) {
-//         console.error( `Error: ${ error.message }` );
-//         return;
-//     }
-//     console.log( `stdout: ${ stdout }` );
+const data = ['AS580', 'AS588', 'AS600', 'allskutocart'];
 
-// } );
-
-// exec( 'npx allure generate ../../raw-test-data/cart/addtocart/AS588 -o ../../TestReports/cart/addtocart/AS588 --clean', ( error, stdout, stderr ) => {
-//     if ( error ) {
-//         console.error( `Error: ${ error.message }` );
-//         return;
-//     }
-//     console.log( `stdout: ${ stdout }` );
-
-// } );
-
-// exec( 'npx allure generate ../../raw-test-data/cart/addtocart/AS600 -o ../../TestReports/cart/addtocart/AS600 --clean', ( error, stdout, stderr ) => {
-//     if ( error ) {
-//         console.error( `Error: ${ error.message }` );
-//         return;
-//     }
-//     console.log( `stdout: ${ stdout }` );
-
-// } );
-
-exec( 'npx allure generate ../../raw-test-data/checkout/allskutocart -o ../../TestReports/checkout/allskutocart --clean', ( error, stdout, stderr ) => {
-    if ( error ) {
-        console.error( `Error: ${ error.message }` );
-        return;
-    }
-    console.log( `stdout: ${ stdout }` );
-    
-} );
+data.forEach(path =>{
+    exec( `npx allure generate ../../raw-test-data/cart/addtocart/screenshot/${path} -o ../../TestReports/cart/addtocart/screenshot/${path} --clean`, ( error, stdout, stderr ) => {
+        if ( error ) {
+            console.error( `Error: ${ error.message }` );
+            return;
+        }
+        console.log( `stdout: ${ stdout }` );
+        
+    } );
+})
+ 

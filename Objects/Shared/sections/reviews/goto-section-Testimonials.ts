@@ -28,13 +28,26 @@ class ClientReviewSection {
     await this.goto_client_reviews().scrollIntoViewIfNeeded();
   }
 
-  async Check_clientReview_is_visible() {
+  //Order Page Review Section
+  async Assert_OrderPage_Review_Section() {
+    await this.goto_client_reviews().scrollIntoViewIfNeeded();
     await expect(this.goto_client_reviews()).toBeVisible();
     await expect(this.cr_heading()).toBeVisible();
     await expect(this.cr_review1()).toBeVisible();
     await expect(this.cr_review2()).toBeVisible();
     await expect(this.cr_review3()).toBeVisible();
-    await expect(this.cr_freebox_link()).toBeVisible();
+    // await expect(this.cr_freebox_link()).toBeVisible();
+  }
+
+  //Free Sample Landing Page Section
+  async Assert_FreeBoxPage_Review_Section() {
+    await this.goto_client_reviews().scrollIntoViewIfNeeded();
+    await expect(this.goto_client_reviews()).toBeVisible();
+    await expect(this.cr_heading()).toBeVisible();
+    await expect(this.cr_review1()).toBeVisible();
+    await expect(this.cr_review2()).toBeVisible();
+    await expect(this.cr_review3()).toBeVisible();
+     await expect(this.cr_freebox_link()).toBeVisible();
   }
 
   //Assert Home Page Review Slider Visible

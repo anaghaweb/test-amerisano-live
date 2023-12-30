@@ -13,7 +13,7 @@ class Cookies{
     
    async Accept_Cookies(){
     await expect(this.cookie_popup()).toBeVisible();
-    await 
+    
     await this.cookie_Button().click();
    }
   }

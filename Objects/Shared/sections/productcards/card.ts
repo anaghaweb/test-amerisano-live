@@ -17,6 +17,7 @@ class ProductSpecification{
  as580specs=()=>this.page.getByRole('button', { name: 'Expand Full Specs feature-icon' }).nth(1);
  as588specs=()=>this.page.getByRole('button', { name: 'Expand Full Specs feature-icon' }).nth(2);
 
+
  //METHODS
 
  async AS580_Card(){
@@ -35,7 +36,14 @@ class ProductSpecification{
     await expect(this.as600()).toBeVisible();
  }
  
+ //Freebox HomePage Product Cards Visual Check
 
+ async FreeBox_ProductsCards_Visible(){
+   await this.page.locator('#products').scrollIntoViewIfNeeded();
+   await expect(this.page.locator('#products')).toBeVisible();
+ }
+
+ //AmerisanoBuy Page
  async RecommendedProductSection(){
     await this.heading().scrollIntoViewIfNeeded();
     await expect(this.heading()).toBeVisible();

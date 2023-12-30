@@ -12,6 +12,7 @@ class AS580_Order_Section {
   }
 
   //Locators
+  as580 =()=> this.page.getByText('Nitrile Exam Gloves | AS-580Medical-Grade, Exceptional tactile sensitivityBox:');
 
   AS580_section = () =>
     this.page.locator(
@@ -26,7 +27,19 @@ class AS580_Order_Section {
   sizeXL = () => this.page.locator(`${locator_1}:nth-child(5) > ${locator_2}`);
   Add_AS580_To_Cart = () =>
     this.page.getByRole("button", { name: "ADD TO CART" }).nth(1);
+
+
+
   //Actions
+
+    //AS580 Section View
+  
+  async AS580_Section_View() {
+    await this.AS580_section().scrollIntoViewIfNeeded();
+    await this.page.waitForTimeout(2000);
+    
+  }
+
 
   public async AS580OrderSection(
     xs: string,
@@ -48,7 +61,7 @@ class AS580_Order_Section {
 
   public async checkstockandfill(glovesize: any, quantity: string) {
     await glovesize().click();
-    await this.page.waitForTimeout(100);
+    await this.page.waitForTimeout(200);
     if (
       (await this.page
         .getByPlaceholder("Please enter your email")

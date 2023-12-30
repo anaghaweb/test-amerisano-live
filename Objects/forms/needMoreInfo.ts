@@ -7,8 +7,14 @@ class NeedMoreinfoForm {
     this.page = page;
   }
 
+  async AssertNeedMoreInfoForm(){
+    await this.page.getByText('Need more information?Fill').scrollIntoViewIfNeeded();
+    await expect(this.page.getByText('Need more information?Fill')).toBeVisible();
+  }
+
   async clickNeedMoreInfo() {
     this.page.getByText("Need more information?Fill").scrollIntoViewIfNeeded();
+    
   }
 
   async fillFirstName(firstName: string) {

@@ -1,8 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Mon Dec 25 21:54:23 IST 2023","Mon Dec 25 21:55:20 IST 2023","56778","chromium","cart\checkoutAllProducts.spec.ts","","","","proceed to checkout from Order Page on device Desktop Edge HiDPI",""
-"passed","Mon Dec 25 21:52:36 IST 2023","Mon Dec 25 21:53:35 IST 2023","59003","chromium","cart\checkoutAllProducts.spec.ts","","","","proceed to checkout from Order Page on device MacBook Air 2020 13",""
-"passed","Mon Dec 25 21:53:31 IST 2023","Mon Dec 25 21:54:22 IST 2023","50317","chromium","cart\checkoutAllProducts.spec.ts","","","","proceed to checkout from Order Page on device Macbook Pro 15",""
-"passed","Mon Dec 25 21:55:10 IST 2023","Mon Dec 25 21:55:51 IST 2023","40494","chromium","cart\checkoutAllProducts.spec.ts","","","","proceed to checkout from Order Page on device ultrawide FHD",""
-"passed","Mon Dec 25 21:54:22 IST 2023","Mon Dec 25 21:55:10 IST 2023","48688","chromium","cart\checkoutAllProducts.spec.ts","","","","proceed to checkout from Order Page on device Desktop Safari",""
-"passed","Mon Dec 25 21:53:35 IST 2023","Mon Dec 25 21:54:23 IST 2023","48271","chromium","cart\checkoutAllProducts.spec.ts","","","","proceed to checkout from Order Page on device Desktop Chrome",""
-"passed","Mon Dec 25 21:52:36 IST 2023","Mon Dec 25 21:53:31 IST 2023","55276","chromium","cart\checkoutAllProducts.spec.ts","","","","proceed to checkout from Order Page on device Microsoft Surface",""
