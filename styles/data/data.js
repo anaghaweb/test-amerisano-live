@@ -1,20 +1,20 @@
 export const homePage = [
-  { path: "Address", name: "Address" },
-  { path: "Banner", name: "Header" },
-  { path: "Footer", name: "Footer" },
-  { path: "Groupbuy", name: "Group Buying" },
-  { path: "Ourstory", name: "Our tory" },
-  { path: "Product", name: "Recommended Products" },
-  { path: "Review", name: "Client Reviews" },
+  { path: "address", name: "Address" },
+  { path: "banner", name: "Header" },
+  { path: "footer", name: "Footer" },
+  { path: "groupbuy", name: "Group Buying" },
+  { path: "ourstory", name: "Our Story" },
+  { path: "product", name: "Recommended Products" },
+  { path: "review", name: "Client Reviews" },
 ];
 
 export const orderPageData = [
   { name: "AS580", path: "AS580" },
   { name: "AS588", path: "AS588" },
   { name: "AS600", path: "AS600" },
-  { name: "Better Pricing", path: "Better Pricing" },
-  { name: "Need More Info", path: "Need More Info" },
-  { name: "Review", path: "Review" },
+  { name: "Better Pricing", path: "betterpricing" },
+  { name: "Need More Info", path: "needmoreinfo" },
+  { name: "Review", path: "review" },
 ];
 
 export const freeboxData = [
