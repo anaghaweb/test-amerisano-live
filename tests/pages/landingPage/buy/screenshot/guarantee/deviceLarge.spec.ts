@@ -2,7 +2,7 @@ import { test, expect } from "@playwright/test";
 import { DiscountCoupanPopup } from "../../../../../../Objects/Shared";
 import {Cookies} from "../../../../../../Objects/Shared";
 import { setupTest, teardownTest, getPage } from '../../../../../../SetupTest/setupTest';
-import { largeScreen } from "../../../../../../Context/largeScreen";
+import { largeScreen } from "../../../../../../context/largeScreen";
 import {Amerisano_Buy} from "../../../../../../Objects/Pages";
 import { isHorizontalScrollbarPresent } from "../../../../../../utils/widthCheck";
 

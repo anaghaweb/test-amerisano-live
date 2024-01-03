@@ -2,7 +2,7 @@ import { test} from "@playwright/test";
 import {Cookies} from "../../../../../Objects/Shared";
 import {OrderPage} from '../../../../../Objects/Pages/index';
 import { setupTest, teardownTest, getPage } from "../../../../../SetupTest/setupTest";
-import { largeScreen } from "../../../../../Context/largeScreen";
+import { largeScreen } from "../../../../../context/largeScreen";
 import { isHorizontalScrollbarPresent } from "../../../../../utils/widthCheck";
 
 process.env.ALLURE_RESULTS_DIR = "raw-test-data/pages/orderpage/screenshot/as580/devicelarge";
