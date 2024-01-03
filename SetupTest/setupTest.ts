@@ -6,7 +6,7 @@ import {
   BrowserContext,
   Page,
 } from "playwright";
-import GetContext from "../context/getContext";
+import GetContext from "../Context/getContext";
 
 let browser: Browser;
 let context: BrowserContext;
