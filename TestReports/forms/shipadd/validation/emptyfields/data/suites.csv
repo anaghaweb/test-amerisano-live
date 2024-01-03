@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Tue Dec 26 15:50:03 IST 2023","Tue Dec 26 15:50:36 IST 2023","32921","chromium","forms\shippingaddress\validation\empty.spec.ts","","","","Shipping Address required fields empty MacBook Air 2020 13",""
+"passed","Tue Dec 26 15:53:13 IST 2023","Tue Dec 26 15:53:45 IST 2023","32569","chromium","forms\shippingaddress\validation\empty.spec.ts","","","","Shipping Address required fields empty ultrawide FHD",""
+"passed","Tue Dec 26 15:51:37 IST 2023","Tue Dec 26 15:52:09 IST 2023","31516","chromium","forms\shippingaddress\validation\empty.spec.ts","","","","Shipping Address required fields empty Desktop Chrome",""
+"passed","Tue Dec 26 15:50:36 IST 2023","Tue Dec 26 15:51:06 IST 2023","30033","chromium","forms\shippingaddress\validation\empty.spec.ts","","","","Shipping Address required fields empty Microsoft Surface",""
+"passed","Tue Dec 26 15:52:40 IST 2023","Tue Dec 26 15:53:13 IST 2023","32642","chromium","forms\shippingaddress\validation\empty.spec.ts","","","","Shipping Address required fields empty Desktop Edge HiDPI",""
+"passed","Tue Dec 26 15:51:06 IST 2023","Tue Dec 26 15:51:37 IST 2023","30829","chromium","forms\shippingaddress\validation\empty.spec.ts","","","","Shipping Address required fields empty Macbook Pro 15",""
+"passed","Tue Dec 26 15:52:09 IST 2023","Tue Dec 26 15:52:40 IST 2023","31219","chromium","forms\shippingaddress\validation\empty.spec.ts","","","","Shipping Address required fields empty Desktop Safari",""

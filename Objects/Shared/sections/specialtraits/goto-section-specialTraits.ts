@@ -25,6 +25,8 @@ class SpecialTraits{
     }
 
     async Assert_SpecialTraits_Visibility(){
+        await this.goto_SpecialTraits();
+        await this.page.waitForTimeout(200);
         await expect(this.st_heading()).toBeVisible()
         await expect(this.st_subtitle()).toBeVisible();
         await expect(this.st_trait1()).toBeVisible();

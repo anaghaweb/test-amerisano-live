@@ -6,4 +6,5 @@ node_modules/
 /raw-test-data/
 /blob-report/
 /playwright/.cache/
+/allure-results/
 

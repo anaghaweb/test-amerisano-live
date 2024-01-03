@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Dec 27 02:06:14 IST 2023","Wed Dec 27 02:06:55 IST 2023","41067","chromium","forms\paymentMethod\screenshot\paypal\deviceLarge.spec.ts","","","","PayPal Payment Method screenshot Desktop Edge HiDPI",""
+"passed","Wed Dec 27 02:03:00 IST 2023","Wed Dec 27 02:03:40 IST 2023","40230","chromium","forms\paymentMethod\screenshot\paypal\deviceLarge.spec.ts","","","","PayPal Payment Method screenshot MacBook Air 2020 13",""
+"passed","Wed Dec 27 02:04:18 IST 2023","Wed Dec 27 02:04:56 IST 2023","38261","chromium","forms\paymentMethod\screenshot\paypal\deviceLarge.spec.ts","","","","PayPal Payment Method screenshot Macbook Pro 15",""
+"passed","Wed Dec 27 02:03:40 IST 2023","Wed Dec 27 02:04:18 IST 2023","37945","chromium","forms\paymentMethod\screenshot\paypal\deviceLarge.spec.ts","","","","PayPal Payment Method screenshot Microsoft Surface",""
+"passed","Wed Dec 27 02:05:35 IST 2023","Wed Dec 27 02:06:14 IST 2023","38753","chromium","forms\paymentMethod\screenshot\paypal\deviceLarge.spec.ts","","","","PayPal Payment Method screenshot Desktop Safari",""
+"passed","Wed Dec 27 02:06:55 IST 2023","Wed Dec 27 02:07:34 IST 2023","39792","chromium","forms\paymentMethod\screenshot\paypal\deviceLarge.spec.ts","","","","PayPal Payment Method screenshot ultrawide FHD",""
+"passed","Wed Dec 27 02:04:56 IST 2023","Wed Dec 27 02:05:35 IST 2023","38340","chromium","forms\paymentMethod\screenshot\paypal\deviceLarge.spec.ts","","","","PayPal Payment Method screenshot Desktop Chrome",""

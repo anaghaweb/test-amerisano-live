@@ -1,19 +1,22 @@
-import { test, expect } from "@playwright/test";
+import { test, expect, Locator, ElementHandle } from "@playwright/test";
+import { setupTest, teardownTest, getPage } from "../SetupTest/setupTest";
+import { largeScreen } from "../Context/largeScreen";
+import { GotoLandingPage } from "../Objects/Pages";
 
-test.describe("recordlocator", () => {
-  const { chromium, webkit, firefox } = require("playwright");
+import { Cookies } from "../Objects/Shared";
 
-  test("testinglocator", async ({ page }) => {
-    //Freebox page
-   
-   await page.goto('https://www.amerisano.com/');
-   await page.getByRole('button', { name: 'Accept All' }).click();
-   await page.getByText('Schedule a call with our team to get the best pricing for your groupGroup Size*')
-   await page.locator('.icon-close').click();
-   await page.locator('div').filter({ hasText: 'Group BuyingOur distribution' }).nth(2).click();
-   await page.locator('div').filter({ hasText: 'Group BuyingOur distribution' }).nth(2).click();
-  await page.locator('div').filter({ hasText: 'Group BuyingOur distribution' }).nth(2)
-  await page.locator('#group').click();
 
-  });
-});
+test('record', async({page}, testInfo)=>{
+
+const pom=new GotoLandingPage(page);
+
+await pom.LoadLandingPage();
+
+await page.locator('#products').scrollIntoViewIfNeeded();
+await expect(page.locator('#products')).toBeVisible();
+await testInfo.attach('screenshot', {
+    body: await page.screenshot(),
+    contentType: 'image/png'
+})
+
+})

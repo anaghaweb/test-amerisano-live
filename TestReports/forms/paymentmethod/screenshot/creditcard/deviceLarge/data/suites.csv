@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Dec 27 01:59:31 IST 2023","Wed Dec 27 02:00:10 IST 2023","39031","chromium","forms\paymentMethod\screenshot\creditcard\deviceLarge.spec.ts","","","","CreditCard Payment Method screenshot Desktop Chrome",""
+"passed","Wed Dec 27 02:00:10 IST 2023","Wed Dec 27 02:00:50 IST 2023","40453","chromium","forms\paymentMethod\screenshot\creditcard\deviceLarge.spec.ts","","","","CreditCard Payment Method screenshot Desktop Safari",""
+"passed","Wed Dec 27 01:58:13 IST 2023","Wed Dec 27 01:58:52 IST 2023","38369","chromium","forms\paymentMethod\screenshot\creditcard\deviceLarge.spec.ts","","","","CreditCard Payment Method screenshot Microsoft Surface",""
+"passed","Wed Dec 27 02:01:33 IST 2023","Wed Dec 27 02:02:13 IST 2023","40097","chromium","forms\paymentMethod\screenshot\creditcard\deviceLarge.spec.ts","","","","CreditCard Payment Method screenshot ultrawide FHD",""
+"passed","Wed Dec 27 01:58:52 IST 2023","Wed Dec 27 01:59:31 IST 2023","39258","chromium","forms\paymentMethod\screenshot\creditcard\deviceLarge.spec.ts","","","","CreditCard Payment Method screenshot Macbook Pro 15",""
+"passed","Wed Dec 27 01:57:34 IST 2023","Wed Dec 27 01:58:13 IST 2023","38626","chromium","forms\paymentMethod\screenshot\creditcard\deviceLarge.spec.ts","","","","CreditCard Payment Method screenshot MacBook Air 2020 13",""
+"passed","Wed Dec 27 02:00:50 IST 2023","Wed Dec 27 02:01:32 IST 2023","41993","chromium","forms\paymentMethod\screenshot\creditcard\deviceLarge.spec.ts","","","","CreditCard Payment Method screenshot Desktop Edge HiDPI",""

@@ -7,21 +7,24 @@ class Footer_Section{
         this.page=page;
            }
 
-        //Locators
-        /**
-         * await expect(page.locator('div').filter({ hasText: /^GET MY FREE NITRILE GLOVES BOX NOW!Privacy Policy$/ }).nth(2)).toBeVisible();
-    await expect(page.locator('.col-md-6 > img')).toBeVisible();
-    await expect(page.locator('[id="__next"]')).toContainText('GET MY FREE NITRILE GLOVES BOX NOW!');
-    await expect(page.locator('[id="__next"]')).toContainText('Privacy Policy');
-    await expect(page.getByRole('link', { name: 'scroll-to-top' })).toBeVisible();
-         */
+    //LOCATORS
+      
+    goto_footer = ()=>this.page.getByText('Our Products');
 
-    goto_footer = ()=>this.page.locator('div').filter({ hasText: /^GET MY FREE NITRILE GLOVES BOX NOW!Privacy Policy$/ }).nth(2);
+    freeboxfooter=()=>this.page.locator('div').filter({ hasText: /^GET MY FREE NITRILE GLOVES BOX NOW!Privacy Policy$/ }).nth(2);
+
+    //Methods
 
     async Check_Footer_isvisible(){
         await this.goto_footer().scrollIntoViewIfNeeded();
         await expect(this.goto_footer()).toBeVisible();
     }
+
+    async Assert_FreeBox_Footer_Visible(){
+        await this.freeboxfooter().scrollIntoViewIfNeeded();
+        await expect(this.freeboxfooter()).toBeVisible();
+    }
 }
+
 
 export default Footer_Section;

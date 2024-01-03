@@ -1,1 +1,0 @@
-Unsupported device: [object Object]. Using default settings.

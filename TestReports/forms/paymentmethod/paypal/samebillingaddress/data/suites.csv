@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Dec 27 01:38:53 IST 2023","Wed Dec 27 01:39:31 IST 2023","37676","chromium","forms\paymentMethod\paypal\sameBillingAddress.spec.ts","","","","billing & shipping address should be same Desktop Safari",""
+"passed","Wed Dec 27 01:40:11 IST 2023","Wed Dec 27 01:40:50 IST 2023","39032","chromium","forms\paymentMethod\paypal\sameBillingAddress.spec.ts","","","","billing & shipping address should be same ultrawide FHD",""
+"passed","Wed Dec 27 01:36:55 IST 2023","Wed Dec 27 01:37:35 IST 2023","39273","chromium","forms\paymentMethod\paypal\sameBillingAddress.spec.ts","","","","billing & shipping address should be same Microsoft Surface",""
+"passed","Wed Dec 27 01:38:16 IST 2023","Wed Dec 27 01:38:53 IST 2023","37249","chromium","forms\paymentMethod\paypal\sameBillingAddress.spec.ts","","","","billing & shipping address should be same Desktop Chrome",""
+"passed","Wed Dec 27 01:37:35 IST 2023","Wed Dec 27 01:38:16 IST 2023","41161","chromium","forms\paymentMethod\paypal\sameBillingAddress.spec.ts","","","","billing & shipping address should be same Macbook Pro 15",""
+"passed","Wed Dec 27 01:36:09 IST 2023","Wed Dec 27 01:36:55 IST 2023","46764","chromium","forms\paymentMethod\paypal\sameBillingAddress.spec.ts","","","","billing & shipping address should be same MacBook Air 2020 13",""
+"passed","Wed Dec 27 01:39:31 IST 2023","Wed Dec 27 01:40:11 IST 2023","39656","chromium","forms\paymentMethod\paypal\sameBillingAddress.spec.ts","","","","billing & shipping address should be same Desktop Edge HiDPI",""

@@ -1,8 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Thu Dec 21 21:57:37 IST 2023","Thu Dec 21 21:58:04 IST 2023","27660","chromium","cart\AS600cart.spec.ts","","","","AS580 ViewCart Order Page on device Macbook Pro 15",""
-"passed","Thu Dec 21 21:57:05 IST 2023","Thu Dec 21 21:57:37 IST 2023","31244","chromium","cart\AS600cart.spec.ts","","","","AS580 ViewCart Order Page on device Microsoft Surface",""
-"passed","Thu Dec 21 21:58:40 IST 2023","Thu Dec 21 21:59:05 IST 2023","25107","chromium","cart\AS600cart.spec.ts","","","","AS580 ViewCart Order Page on device ultrawide FHD",""
-"passed","Thu Dec 21 21:58:09 IST 2023","Thu Dec 21 21:58:40 IST 2023","30884","chromium","cart\AS600cart.spec.ts","","","","AS580 ViewCart Order Page on device Desktop Chrome",""
-"passed","Thu Dec 21 21:57:37 IST 2023","Thu Dec 21 21:58:09 IST 2023","31864","chromium","cart\AS600cart.spec.ts","","","","AS580 ViewCart Order Page on device Desktop Safari",""
-"passed","Thu Dec 21 21:57:05 IST 2023","Thu Dec 21 21:57:37 IST 2023","31850","chromium","cart\AS600cart.spec.ts","","","","AS580 ViewCart Order Page on device MacBook Air 2020 13",""
-"passed","Thu Dec 21 21:58:05 IST 2023","Thu Dec 21 21:58:44 IST 2023","39134","chromium","cart\AS600cart.spec.ts","","","","AS580 ViewCart Order Page on device Desktop Edge HiDPI",""

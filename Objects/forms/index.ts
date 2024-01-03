@@ -7,3 +7,6 @@ export {default as CreateAccountForm} from "./createAccount";
 export {default as ForgotPwdForm} from "./forgotPassword";
 export {default as FreeSampleForm} from "./freeSample";
 export {default as GroupBuyingForm} from "./groupBuying";
+export {default as WholesaleForm} from "./wholesale";
+export {default as ShippingAddressForm} from "./shippingadd";
+export {default as PaymentMethodForm} from "./paymentmethod"

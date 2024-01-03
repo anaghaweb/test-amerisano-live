@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Tue Dec 26 14:59:09 IST 2023","Tue Dec 26 15:00:20 IST 2023","70960","chromium","forms\shippingaddress\screenshot\deviceLarge.spec.ts","","","","Shipping Address form screenshot on MacBook Air 2020 13",""
+"passed","Tue Dec 26 15:01:10 IST 2023","Tue Dec 26 15:01:54 IST 2023","43829","chromium","forms\shippingaddress\screenshot\deviceLarge.spec.ts","","","","Shipping Address form screenshot on Desktop Safari",""
+"passed","Tue Dec 26 15:01:54 IST 2023","Tue Dec 26 15:02:27 IST 2023","32308","chromium","forms\shippingaddress\screenshot\deviceLarge.spec.ts","","","","Shipping Address form screenshot on ultrawide FHD",""
+"passed","Tue Dec 26 15:01:11 IST 2023","Tue Dec 26 15:01:55 IST 2023","44433","chromium","forms\shippingaddress\screenshot\deviceLarge.spec.ts","","","","Shipping Address form screenshot on Desktop Edge HiDPI",""
+"passed","Tue Dec 26 14:59:08 IST 2023","Tue Dec 26 15:00:20 IST 2023","71868","chromium","forms\shippingaddress\screenshot\deviceLarge.spec.ts","","","","Shipping Address form screenshot on Microsoft Surface",""
+"passed","Tue Dec 26 15:00:20 IST 2023","Tue Dec 26 15:01:11 IST 2023","50372","chromium","forms\shippingaddress\screenshot\deviceLarge.spec.ts","","","","Shipping Address form screenshot on Desktop Chrome",""
+"passed","Tue Dec 26 15:00:20 IST 2023","Tue Dec 26 15:01:10 IST 2023","50205","chromium","forms\shippingaddress\screenshot\deviceLarge.spec.ts","","","","Shipping Address form screenshot on Macbook Pro 15",""

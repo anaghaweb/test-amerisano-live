@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Tue Dec 26 16:13:11 IST 2023","Tue Dec 26 16:13:47 IST 2023","36157","chromium","forms\shippingaddress\validation\submitSuccess\success.spec.ts","","","","Shipping Address form submit success on Desktop Safari",""
+"passed","Tue Dec 26 16:14:29 IST 2023","Tue Dec 26 16:15:07 IST 2023","38165","chromium","forms\shippingaddress\validation\submitSuccess\success.spec.ts","","","","Shipping Address form submit success on ultrawide FHD",""
+"passed","Tue Dec 26 16:12:33 IST 2023","Tue Dec 26 16:13:11 IST 2023","37499","chromium","forms\shippingaddress\validation\submitSuccess\success.spec.ts","","","","Shipping Address form submit success on Desktop Chrome",""
+"passed","Tue Dec 26 16:13:47 IST 2023","Tue Dec 26 16:14:29 IST 2023","41536","chromium","forms\shippingaddress\validation\submitSuccess\success.spec.ts","","","","Shipping Address form submit success on Desktop Edge HiDPI",""
+"passed","Tue Dec 26 16:11:17 IST 2023","Tue Dec 26 16:11:54 IST 2023","37426","chromium","forms\shippingaddress\validation\submitSuccess\success.spec.ts","","","","Shipping Address form submit success on Microsoft Surface",""
+"passed","Tue Dec 26 16:11:54 IST 2023","Tue Dec 26 16:12:33 IST 2023","38914","chromium","forms\shippingaddress\validation\submitSuccess\success.spec.ts","","","","Shipping Address form submit success on Macbook Pro 15",""
+"passed","Tue Dec 26 16:10:39 IST 2023","Tue Dec 26 16:11:17 IST 2023","37653","chromium","forms\shippingaddress\validation\submitSuccess\success.spec.ts","","","","Shipping Address form submit success on MacBook Air 2020 13",""
