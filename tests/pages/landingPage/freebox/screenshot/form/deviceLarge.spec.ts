@@ -1,7 +1,7 @@
 import { test} from "@playwright/test";
 import {Cookies} from "../../../../../../Objects/Shared";
 import {GotoLandingPage} from '../../../../../../Objects/Pages/index';
-import { setupTest, teardownTest, getPage } from "../../../../../../SetupTest/setupTest";
+import { setupTest, teardownTest, getPage } from "../../../../../../testSetup/setupTest";
 import { largeScreen } from "../../../../../../Context/largeScreen";
 import { isHorizontalScrollbarPresent } from "../../../../../../utils/widthCheck";
 

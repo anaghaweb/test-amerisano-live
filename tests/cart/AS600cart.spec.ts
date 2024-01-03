@@ -1,8 +1,8 @@
 import { test, expect } from "@playwright/test";
 import { AS600_Order_Section} from "../../Objects/forms";
-import { Cart_Close_Btn } from "../../Objects/Shared";
+
 import { OrderPage } from "../../Objects/Pages";
-import { setupTest, teardownTest, getPage } from '../../SetupTest/setupTest';
+import { setupTest, teardownTest, getPage } from '../../testSetup/setupTest';
 import { largeScreen } from "../../context/largeScreen";
 import {Cookies} from "../../Objects/Shared";
 

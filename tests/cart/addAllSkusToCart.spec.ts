@@ -3,7 +3,7 @@ import { AS580_Order_Section, AS588_Order_Section, AS600_Order_Section} from "..
 import {DiscountCoupanPopup} from "../../Objects/Shared";
 import { Cart_Close_Btn} from "../../Objects/Shared";
 import { OrderPage } from "../../Objects/Pages";
-import { setupTest, teardownTest, getPage } from '../../SetupTest/setupTest';
+import { setupTest, teardownTest, getPage } from '../../testSetup/setupTest';
 import { largeScreen } from "../../context/largeScreen";
 import {Cookies} from "../../Objects/Shared";
 

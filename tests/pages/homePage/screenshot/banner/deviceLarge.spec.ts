@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 import { DiscountCoupanPopup } from "../../../../../Objects/Shared";
 import {Cookies} from "../../../../../Objects/Shared";
-import { setupTest, teardownTest, getPage } from '../../../../../SetupTest/setupTest';
+import { setupTest, teardownTest, getPage } from '../../../../../testSetup/setupTest';
 import { largeScreen } from "../../../../../context/largeScreen";
 import AmerisanoHomePage from "../../../../../Objects/Pages/homepage/goto-homepage";
 import { isHorizontalScrollbarPresent } from "../../../../../utils/widthCheck";
