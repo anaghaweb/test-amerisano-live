@@ -18,15 +18,16 @@ export default defineConfig({
   /* Retry on CI only */
   retries: process.env.CI ? 2 : 1,
   /* Opt out of parallel tests on CI. */
-  workers: process.env.CI ? 7 : 2,
+  workers: process.env.CI ? 1 : 2,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
+    [process.env.CI ? 'blob' : 'html'],
     // ["line"],
     ["html", { open: "never", outputFolder: "playwright-report" }],
     // ["json", { outputDir: "json-reports" }],
-    ['blob', { outputDir: 'blob-report' }],
-    ['json', { outputFile: 'results.json' }],
-    ["allure-playwright", { detail: true }],
+    // ['blob', { outputDir: 'blob-report' }],
+    // ['json', { outputFile: 'results.json' }],
+    // ["allure-playwright", { detail: true }],
   ],
   timeout: 90000,
 
@@ -37,7 +38,7 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: "on-first-retry",
-    
+    screenshot:"on",
   },
 
   /* Configure projects for major browsers */
