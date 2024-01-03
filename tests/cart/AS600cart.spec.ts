@@ -3,7 +3,7 @@ import { AS600_Order_Section} from "../../Objects/forms";
 
 import { OrderPage } from "../../Objects/Pages";
 import { setupTest, teardownTest, getPage } from '../../testSetup/setupTest';
-import { largeScreen } from "../../context";
+import { largeScreen } from "../../contexts";
 import {Cookies} from "../../Objects/Shared";
 
 process.env.ALLURE_RESULTS_DIR = "raw-test-data/cart/addtocart/screenshot/AS600";

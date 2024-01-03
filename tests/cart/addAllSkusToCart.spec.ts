@@ -4,7 +4,7 @@ import {DiscountCoupanPopup} from "../../Objects/Shared";
 import { Cart_Close_Btn} from "../../Objects/Shared";
 import { OrderPage } from "../../Objects/Pages";
 import { setupTest, teardownTest, getPage } from '../../testSetup/setupTest';
-import { largeScreen } from "../../context";
+import { largeScreen } from "../../contexts";
 import {Cookies} from "../../Objects/Shared";
 
 process.env.ALLURE_RESULTS_DIR = "raw-test-data/cart/addtocart/screenshot/allskutocart";

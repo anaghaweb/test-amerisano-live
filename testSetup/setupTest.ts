@@ -7,7 +7,7 @@ import {
   Page,
 } from "playwright";
 
-import  GetContext  from "../context/getContext";
+import  {GetContext}  from "../contexts";
 
 let browser: Browser;
 let context: BrowserContext;
