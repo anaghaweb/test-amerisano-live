@@ -1,0 +1,1 @@
+export const qty = [1,2,4,8];

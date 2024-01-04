@@ -2,7 +2,7 @@ import { test} from "@playwright/test";
 import {Cookies} from "../../../../../../Objects/Shared";
 import {GotoLandingPage} from '../../../../../../Objects/Pages/index';
 import { setupTest, teardownTest, getPage } from "../../../../../../testSetup/setupTest";
-import { largeScreen } from "../../../../../../Context/largeScreen";
+import { largeScreen } from "../../../../../../contexts";
 import { isHorizontalScrollbarPresent } from "../../../../../../utils/widthCheck";
 
 const freeboxData = [{name:'banner', method:'Assert_FreeBoxBanner_Visible'},

@@ -1,4 +1,5 @@
 import { Page } from "@playwright/test";
+import checkStockAndFill from "../Shared/checkstockandfill/fillqty";
 
 const locator_1 = `div:nth-child(2) > .product_product__DrVEg > .product_content__yjUC8 > .product_row__cJSpY > .product_product-details__2Zl1a > .product_bottom__g5i_4 > .product_pricing__PC29q > .product_product-order__xPM4i > div > .product_product-variations__pWyyw > .product_form__mHjXD > .product_form-row___weFk > div`;
 
@@ -6,9 +7,11 @@ const locator_2 = `.input_container__8yb9l > .input_data__fSFbO > .input_input__
 
 class AS580_Order_Section {
   private readonly page: Page;
+    fillQty:checkStockAndFill;
 
   constructor(page: Page) {
     this.page = page;
+    this.fillQty = new checkStockAndFill(page);
   }
 
   //Locators
@@ -59,20 +62,26 @@ class AS580_Order_Section {
 
   //Actions
 
-  public async checkstockandfill(glovesize: any, quantity: string) {
-    await glovesize().click();
+  async addOnetocart_AS580(size:string, qty:string){
+    await this.AS580_section().scrollIntoViewIfNeeded();
+    await this.fillQty.checkstockandfill(this[`size${size}`], qty, size );
+  }
+
+  
+  public async checkstockandfill(sizeLocator: any, quantity: string, glovesize?:string) {
+    await sizeLocator().click();
     await this.page.waitForTimeout(200);
     if (
       (await this.page
         .getByPlaceholder("Please enter your email")
         .isVisible()) === false
     ) {
-      await glovesize().fill(quantity);
+      await sizeLocator().fill(quantity);
       console.log(
-        `item in stock, order qty of ${quantity} nos filled for size ${glovesize.name}   `
+        ` Size-${glovesize} in stock, added qty of ${quantity} no(s) to cart `
       );
     } else {
-      console.log(`${glovesize.name} item out of stock`);
+      console.log(`Size-${glovesize} is out of stock`);
     }
   }
 }
