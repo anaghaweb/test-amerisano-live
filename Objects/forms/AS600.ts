@@ -1,19 +1,26 @@
 import { Page } from "@playwright/test";
+import checkStockAndFill from "../Shared/checkstockandfill/fillqty";
+import { Cart_Close_Btn } from "../Shared";
 
 const locator_1 = `.input_container__8yb9l > .input_data__fSFbO > .input_input__lyuFG`;
 
 class AS600_Order_Section {
   private readonly page: Page;
+  fillQty:checkStockAndFill;
+  closecart: Cart_Close_Btn;
 
-  constructor(page: Page) {
-    this.page = page;
-  }
+constructor(page: Page) {
+  this.page = page;
+  this.fillQty = new checkStockAndFill(page);
+  this.closecart=new Cart_Close_Btn(page);
+}
 
   //Locators
 
   AS600_section = () => this.page.locator(".product_pricing__PC29q").first();
   AS600_heading = () =>
     this.page.getByRole("heading", { name: "Nitrile Exam Gloves | AS-600" });
+    gotoAS600Section = ()=>this.page.getByText('Nitrile Exam Gloves | AS-600Chemo-Rated, Maximum strength and durabilityBox:');
   sizeXS = () => this.page.locator(".input_input__lyuFG").first();
   sizeS = () => this.page.locator(`div:nth-child(2) > ${locator_1} `).first();
   sizeM = () => this.page.locator(`div:nth-child(3) > ${locator_1}`).first();
@@ -21,11 +28,13 @@ class AS600_Order_Section {
   sizeXL = () => this.page.locator(`div:nth-child(5) > ${locator_1}`).first();
   Add_AS600_To_Cart = () =>
     this.page.getByRole("button", { name: "ADD TO CART" }).first();
+    pointToCloseIcon = ()=>this.page.waitForSelector('div > .icon_container__SL1SC');
+    closeIcon = () => this.page.locator('.icon-close');
 
   //Actions
 
   async AS600_Section_View() {
-    await this.page.getByText('Nitrile Exam Gloves | AS-600Chemo-Rated, Maximum strength and durabilityBox:').scrollIntoViewIfNeeded();
+    await this.page.getByText('Nitrile Exam Gloves | AS-600Chemo-Rated, Maximum strength and durabilityBox:');
     
   }
 
@@ -33,39 +42,41 @@ class AS600_Order_Section {
     await this.Add_AS600_To_Cart().click();
   }
 
-  public async AS600OrderSection(
-    xs: string,
-    s: string,
-    m: string,
-    l: string,
-    xl: string
-  ) {
-    await this.AS600_section().scrollIntoViewIfNeeded();
-    await this.AS600_heading().scrollIntoViewIfNeeded();
-    await this.checkstockandfill(this.sizeXS, xs);
-    await this.checkstockandfill(this.sizeS, s);
-    await this.checkstockandfill(this.sizeM, m);
-    await this.checkstockandfill(this.sizeL, l);
-    await this.checkstockandfill(this.sizeXL, xl);
+  
+  async fill_input_AS600(size:string, qty:string){
+    await this.gotoAS600Section().scrollIntoViewIfNeeded();
+    await this.fillQty.checkstockandfill(this[`size${size}`], qty, size ); 
   }
 
-  //check if stock is available
-  async checkstockandfill(glovesize: any, quantity: string) {
-    await glovesize().click();
-    await this.page.waitForTimeout(100);
+  async click_Cart_Button(){
+    await this.Add_AS600_To_Cart().scrollIntoViewIfNeeded();
+    await this.Add_AS600_To_Cart().click();
+    await this.page.waitForTimeout(3000);
+  }
+
+  async closeCartMenuIcon (){
+    await this.page.waitForTimeout(200);
+    await this.closecart.CloseCartBtn().click();
+  }
+ 
+  public async checkstockandfill(sizeLocator: any, quantity: string, glovesize?:string) {
+    await sizeLocator().click();
+    await this.page.waitForTimeout(200);
     if (
       (await this.page
         .getByPlaceholder("Please enter your email")
         .isVisible()) === false
     ) {
-      await glovesize().fill(quantity);
+      await sizeLocator().fill(quantity);
       console.log(
-        `item in stock, order qty of ${quantity} nos filled for size ${glovesize.name}   `
+        ` Size-${glovesize} in stock, added qty of ${quantity} no(s) to cart `
       );
     } else {
-      console.log(`${glovesize.name} item out of stock`);
+      console.log(`Size-${glovesize} is out of stock`);
     }
   }
+
+  
 }
 
 export default AS600_Order_Section;

@@ -8,7 +8,7 @@ test('testthis', async ({ page }, testInfo) => {
  await page.goto("https://amerisano.com/order");
 
  const pom = new AS580_Order_Section(page);
- await pom.addOnetocart_AS580('XS','2');
+ await pom.fill_input_AS580('XS','2');
 
  await testInfo.attach('screenshot', 
   {
@@ -17,5 +17,7 @@ test('testthis', async ({ page }, testInfo) => {
   
   }
  )
+
+
  
 });

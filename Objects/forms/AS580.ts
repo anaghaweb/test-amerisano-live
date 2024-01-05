@@ -1,17 +1,19 @@
 import { Page } from "@playwright/test";
 import checkStockAndFill from "../Shared/checkstockandfill/fillqty";
+import { Cart_Close_Btn } from "../Shared";
 
 const locator_1 = `div:nth-child(2) > .product_product__DrVEg > .product_content__yjUC8 > .product_row__cJSpY > .product_product-details__2Zl1a > .product_bottom__g5i_4 > .product_pricing__PC29q > .product_product-order__xPM4i > div > .product_product-variations__pWyyw > .product_form__mHjXD > .product_form-row___weFk > div`;
-
 const locator_2 = `.input_container__8yb9l > .input_data__fSFbO > .input_input__lyuFG`;
 
 class AS580_Order_Section {
   private readonly page: Page;
     fillQty:checkStockAndFill;
+    closecart: Cart_Close_Btn;
 
   constructor(page: Page) {
     this.page = page;
     this.fillQty = new checkStockAndFill(page);
+    this.closecart=new Cart_Close_Btn(page);
   }
 
   //Locators
@@ -28,21 +30,19 @@ class AS580_Order_Section {
   sizeM = () => this.page.locator(`${locator_1}:nth-child(3) > ${locator_2}`);
   sizeL = () => this.page.locator(`${locator_1}:nth-child(4) > ${locator_2}`);
   sizeXL = () => this.page.locator(`${locator_1}:nth-child(5) > ${locator_2}`);
+  pointToCloseIcon = ()=>this.page.waitForSelector('div > .icon_container__SL1SC');
+  closeIcon = () => this.page.locator('.icon-close');
   Add_AS580_To_Cart = () =>
     this.page.getByRole("button", { name: "ADD TO CART" }).nth(1);
 
 
 
-  //Actions
+  //METHODS
 
-    //AS580 Section View
-  
-  async AS580_Section_View() {
+   async AS580_Section_View() {
     await this.AS580_section().scrollIntoViewIfNeeded();
-    await this.page.waitForTimeout(2000);
-    
+    await this.page.waitForTimeout(1000);  
   }
-
 
   public async AS580OrderSection(
     xs: string,
@@ -52,7 +52,7 @@ class AS580_Order_Section {
     xl: string
   ) {
     await this.AS580_section().scrollIntoViewIfNeeded();
-    await this.AS580_heading().scrollIntoViewIfNeeded();
+//    await this.AS580_heading().scrollIntoViewIfNeeded();
     await this.checkstockandfill(this.sizeXS, xs);
     await this.checkstockandfill(this.sizeS, s);
     await this.checkstockandfill(this.sizeM, m);
@@ -62,12 +62,22 @@ class AS580_Order_Section {
 
   //Actions
 
-  async addOnetocart_AS580(size:string, qty:string){
+  async fill_input_AS580(size:string, qty:string){
     await this.AS580_section().scrollIntoViewIfNeeded();
-    await this.fillQty.checkstockandfill(this[`size${size}`], qty, size );
+    await this.fillQty.checkstockandfill(this[`size${size}`], qty, size ); 
   }
 
-  
+  async click_Cart_Button(){
+    await this.Add_AS580_To_Cart().scrollIntoViewIfNeeded();
+    await this.Add_AS580_To_Cart().click();
+    await this.page.waitForTimeout(3000);
+  }
+
+  async closeCartMenuIcon (){
+    await this.page.waitForTimeout(200);
+    await this.closecart.CloseCartBtn().click();
+  }
+ 
   public async checkstockandfill(sizeLocator: any, quantity: string, glovesize?:string) {
     await sizeLocator().click();
     await this.page.waitForTimeout(200);

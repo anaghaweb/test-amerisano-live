@@ -27,7 +27,7 @@ export default defineConfig({
   
      ['blob', { outputDir: 'blob-report' }],
      ['json', { outputFile: 'jsonReports/results.json' }],
-    // ["allure-playwright", { detail: true }],
+    ["allure-playwright", { detail: true }],
   ],
   timeout: 90000,
 
@@ -38,7 +38,7 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: "on-first-retry",
-    screenshot:"on",
+    screenshot:"off",
   },
 
   /* Configure projects for major browsers */

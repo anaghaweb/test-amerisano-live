@@ -1,4 +1,10 @@
 import { largeScreen } from "../contexts";
-export const size = [{'xs':'Extra Small'}, {'s':'Small'},{'m':'Medium'} , {'l':'Large'},{'xl':'Extra Large'}];
+export const size = 
+[   {size:'XS',desc:'Extra Small'}, 
+    {size:'S',desc:'Small'},
+    {size:'M',desc:'Medium'} , 
+    {size:'L',desc:'Large'},
+    {size:'XL',desc:'Extra Large'}
+];
 
 export const desktop = largeScreen[2];

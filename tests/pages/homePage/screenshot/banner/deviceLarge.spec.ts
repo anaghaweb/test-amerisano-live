@@ -23,17 +23,14 @@ test.beforeEach("teardown Context", async () => {
             const cookie_pom = new Cookies(page);
             const popup_pom = new DiscountCoupanPopup(page)
             await pom.gotoHomePage();
-
            //Accept Cookie and close Discount Coupon
             await cookie_pom.Accept_Cookies();
             await popup_pom.closeModal();
-
             //Banner Section
             await pom.AssertHeroBanner();
             //check for width
             await page.waitForTimeout(2000);
-            const checkWidth = await isHorizontalScrollbarPresent(page);
-           
+            const checkWidth = await isHorizontalScrollbarPresent(page);   
             await testInfo.attach(`check width on ${device.name}`,{
                 body: checkWidth ? `Horizontal Scrollbar present for viewportWidth:${device.width}` : `width matches perfectly with viewport size ${device.width}`,
                 contentType: 'text/plain'

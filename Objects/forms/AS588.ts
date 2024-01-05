@@ -1,20 +1,24 @@
 import { Page } from "@playwright/test";
+import checkStockAndFill from "../Shared/checkstockandfill/fillqty";
+import { Cart_Close_Btn } from "../Shared";
 
 class AS588_Order_Section {
   private readonly page: Page;
-  constructor(page: Page) {
-    this.page = page;
-  }
+  fillQty:checkStockAndFill;
+  closecart: Cart_Close_Btn;
+
+constructor(page: Page) {
+  this.page = page;
+  this.fillQty = new checkStockAndFill(page);
+  this.closecart=new Cart_Close_Btn(page);
+}
 
   //Locators
 
-  AS588_section = () =>
-    this.page.locator(
-      "div:nth-child(3) > .product_product__DrVEg > .product_content__yjUC8 > .product_row__cJSpY > .product_product-details__2Zl1a"
-    );
   AS588_heading = () =>
     this.page.getByRole("heading", { name: "Nitrile Exam Gloves | AS-588" });
 
+    gotoAS588Section = ()=>this.page.getByText('Nitrile Exam Gloves | AS-588Medical-Grade, Silken Soft Touch, Extra easy');
   sizeS = () =>
     this.page
       .locator("div")
@@ -27,43 +31,52 @@ class AS588_Order_Section {
       .filter({ hasText: /^SM$/ })
       .getByRole("spinbutton")
       .nth(1);
+      pointToCloseIcon = ()=>this.page.waitForSelector('div > .icon_container__SL1SC');
+      closeIcon = () => this.page.locator('.icon-close');
   Add_AS588_To_Cart = () =>
     this.page.getByRole("button", { name: "ADD TO CART" }).nth(2);
 
-  //Actions
+  //METHODS
 
-    //AS560
+    //AS588
 
-    async AS588_Section_View() {
-
-      await this.page.getByText('Nitrile Exam Gloves | AS-588Medical-Grade, Silken Soft Touch, Extra easy').scrollIntoViewIfNeeded();
-      
+    async AS588_Section_View(){
+      await this.gotoAS588Section().scrollIntoViewIfNeeded();
     }
 
-  public async AS588OrderSection(s: string, m: string) {
-    await this.AS588_section().scrollIntoViewIfNeeded();
-    await this.AS588_heading().scrollIntoViewIfNeeded();
-
-    await this.checkstockandfill(this.sizeS, s);
-    await this.checkstockandfill(this.sizeM, m);
+  async fill_input_AS588(size:string, qty:string){
+    await this.gotoAS588Section().scrollIntoViewIfNeeded();
+    await this.fillQty.checkstockandfill(this[`size${size}`], qty, size ); 
   }
 
-  public async checkstockandfill(glovesize: any, quantity: string) {
-    await glovesize().click();
-    await this.page.waitForTimeout(100);
+  async click_Cart_Button(){
+    await this.Add_AS588_To_Cart().scrollIntoViewIfNeeded();
+    await this.Add_AS588_To_Cart().click();
+    await this.page.waitForTimeout(3000);
+  }
+
+  async closeCartMenuIcon (){
+    await this.page.waitForTimeout(200);
+    await this.closecart.CloseCartBtn().click();
+  }
+ 
+  public async checkstockandfill(sizeLocator: any, quantity: string, glovesize?:string) {
+    await sizeLocator().click();
+    await this.page.waitForTimeout(200);
     if (
       (await this.page
         .getByPlaceholder("Please enter your email")
         .isVisible()) === false
     ) {
-      await glovesize().fill(quantity);
+      await sizeLocator().fill(quantity);
       console.log(
-        `item in stock, order qty of ${quantity} nos filled for size ${glovesize.name}   `
+        ` Size-${glovesize} in stock, added qty of ${quantity} no(s) to cart `
       );
     } else {
-      console.log(`${glovesize.name} item out of stock`);
+      console.log(`Size-${glovesize} is out of stock`);
     }
   }
+ 
 }
 
 export default AS588_Order_Section;

@@ -5,20 +5,10 @@ import { setupTest, teardownTest, getPage } from "../../../../../../testSetup/se
 import { largeScreen } from "../../../../../../contexts";
 import { isHorizontalScrollbarPresent } from "../../../../../../utils/widthCheck";
 
-const freeboxData = [{name:'banner', method:'Assert_FreeBoxBanner_Visible'},
-{name:'form', method:'Assert_FreeSampleForm_Visible'},
-{name:'product', method:'Assert_Products_Visible'},
-{name:'pricing', method:'Assert_BetterPricingSection_Visible'},
-{name:'review', method:'Assert_ClientReviewSection_Visible'},
-{name:'traits', method:'Assert_SpecialTraits_Visible'},
-{name:'footer', method:'Assert_FreeSample_Footer_isVisible'},
-]
 
 test.beforeEach(`teardown Context`, async () => {
   await teardownTest();
 });
-
-
   
 process.env.ALLURE_RESULTS_DIR = `raw-test-data/pages/landingpages/freesample/screenshot/footer/devicelarge`;
 
