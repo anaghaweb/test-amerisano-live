@@ -35,8 +35,6 @@ class AS580_Order_Section {
   Add_AS580_To_Cart = () =>
     this.page.getByRole("button", { name: "ADD TO CART" }).nth(1);
 
-
-
   //METHODS
 
    async AS580_Section_View() {
@@ -44,27 +42,15 @@ class AS580_Order_Section {
     await this.page.waitForTimeout(1000);  
   }
 
-  public async AS580OrderSection(
-    xs: string,
-    s: string,
-    m: string,
-    l: string,
-    xl: string
-  ) {
-    await this.AS580_section().scrollIntoViewIfNeeded();
-//    await this.AS580_heading().scrollIntoViewIfNeeded();
-    await this.checkstockandfill(this.sizeXS, xs);
-    await this.checkstockandfill(this.sizeS, s);
-    await this.checkstockandfill(this.sizeM, m);
-    await this.checkstockandfill(this.sizeL, l);
-    await this.checkstockandfill(this.sizeXL, xl);
-  }
-
-  //Actions
-
   async fill_input_AS580(size:string, qty:string){
     await this.AS580_section().scrollIntoViewIfNeeded();
-    await this.fillQty.checkstockandfill(this[`size${size}`], qty, size ); 
+    const res = await this.fillQty.checkstockandfill(this[`size${size}`], qty, size ); 
+    if (res !== false){
+      return true
+    }
+    else{
+      return false
+    }
   }
 
   async click_Cart_Button(){
@@ -78,22 +64,6 @@ class AS580_Order_Section {
     await this.closecart.CloseCartBtn().click();
   }
  
-  public async checkstockandfill(sizeLocator: any, quantity: string, glovesize?:string) {
-    await sizeLocator().click();
-    await this.page.waitForTimeout(200);
-    if (
-      (await this.page
-        .getByPlaceholder("Please enter your email")
-        .isVisible()) === false
-    ) {
-      await sizeLocator().fill(quantity);
-      console.log(
-        ` Size-${glovesize} in stock, added qty of ${quantity} no(s) to cart `
-      );
-    } else {
-      console.log(`Size-${glovesize} is out of stock`);
-    }
-  }
 }
 
 export default AS580_Order_Section;

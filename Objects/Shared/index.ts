@@ -11,3 +11,4 @@ export {default as ProductSpecification} from './sections/productcards/card';
 export {default as OurStory} from './sections/ourstory/story';
 export {default as GroupBuying} from './sections/groupbuying/groupbuy';
 export {default as GoogleMapAddress} from './sections/googlemap/googlemap'
+export {default as CartNavbarButton} from './Buttons/cart-navbar';

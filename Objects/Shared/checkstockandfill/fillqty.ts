@@ -3,15 +3,23 @@ import { Page } from "@playwright/test";
 class checkStockAndFill {
 
     page:Page;
-
+    
     constructor(page:Page){
         this.page=page;
     }
 
     //Methods
 
-    public async checkstockandfill(sizeLocator: any, quantity: string, glovesize?:string) {
+    public async checkstockandfill(sizeLocator, quantity: string, glovesize?:string) {
+      if(sizeLocator){
+        
         await sizeLocator().click();
+      }
+      else{
+        console.log(`this ${glovesize} size is not available for this model` );
+        return false;
+      }
+        
         await this.page.waitForTimeout(200);
         if (
           (await this.page
@@ -24,6 +32,7 @@ class checkStockAndFill {
           );
         } else {
           console.log(`Size-${glovesize} is out of stock`);
+          return false
         }
       }
     }

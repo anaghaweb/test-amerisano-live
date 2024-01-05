@@ -46,7 +46,13 @@ constructor(page: Page) {
 
   async fill_input_AS588(size:string, qty:string){
     await this.gotoAS588Section().scrollIntoViewIfNeeded();
-    await this.fillQty.checkstockandfill(this[`size${size}`], qty, size ); 
+    const res = await this.fillQty.checkstockandfill(this[`size${size}`], qty, size ); 
+    if (res !== false){
+      return true
+    }
+    else{
+      return false
+    }
   }
 
   async click_Cart_Button(){
