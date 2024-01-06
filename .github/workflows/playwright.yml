@@ -43,7 +43,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-        run: |
+      - run: |
           rm -rf node_modules
           npm ci
       - name: Download blob reports from GitHub Actions Artifacts
