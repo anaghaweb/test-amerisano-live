@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Jan 05 17:59:09 IST 2024","Fri Jan 05 17:59:38 IST 2024","29446","chromium","cart\combo\as588600\xs\588600xs.spec.ts","","","","AS588 & AS600 Add to cart XS Qty - 1",""
+"passed","Fri Jan 05 17:59:38 IST 2024","Fri Jan 05 18:00:05 IST 2024","26446","chromium","cart\combo\as588600\xs\588600xs.spec.ts","","","","AS588 & AS600 Add to cart XS Qty - 2",""
+"passed","Fri Jan 05 17:59:09 IST 2024","Fri Jan 05 17:59:39 IST 2024","29966","chromium","cart\combo\as588600\xs\588600xs.spec.ts","","","","AS588 & AS600 Add to cart XS Qty - 0",""
+"passed","Fri Jan 05 17:59:39 IST 2024","Fri Jan 05 18:00:04 IST 2024","25787","chromium","cart\combo\as588600\xs\588600xs.spec.ts","","","","AS588 & AS600 Add to cart XS Qty - 3",""

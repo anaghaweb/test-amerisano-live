@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Jan 05 13:07:11 IST 2024","Fri Jan 05 13:07:41 IST 2024","30248","chromium","cart\as588\m\as588m.spec.ts","","","","AS588 Add to cart Size M Qty - 0",""
+"passed","Fri Jan 05 13:07:11 IST 2024","Fri Jan 05 13:07:42 IST 2024","30880","chromium","cart\as588\m\as588m.spec.ts","","","","AS588 Add to cart Size M Qty - 1",""
+"passed","Fri Jan 05 13:07:41 IST 2024","Fri Jan 05 13:08:11 IST 2024","29260","chromium","cart\as588\m\as588m.spec.ts","","","","AS588 Add to cart Size M Qty - 2",""
+"passed","Fri Jan 05 13:07:42 IST 2024","Fri Jan 05 13:08:11 IST 2024","28967","chromium","cart\as588\m\as588m.spec.ts","","","","AS588 Add to cart Size M Qty - 3",""

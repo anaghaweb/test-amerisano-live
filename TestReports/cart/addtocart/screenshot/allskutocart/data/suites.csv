@@ -1,8 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Sat Dec 30 15:00:20 IST 2023","Sat Dec 30 15:01:11 IST 2023","51065","chromium","cart\addAllSkusToCart.spec.ts","","","","Add All Skus to cart Desktop Safari",""
-"passed","Sat Dec 30 15:01:11 IST 2023","Sat Dec 30 15:01:59 IST 2023","47694","chromium","cart\addAllSkusToCart.spec.ts","","","","Add All Skus to cart ultrawide FHD",""
-"passed","Sat Dec 30 14:59:35 IST 2023","Sat Dec 30 15:00:28 IST 2023","53674","chromium","cart\addAllSkusToCart.spec.ts","","","","Add All Skus to cart Desktop Chrome",""
-"passed","Sat Dec 30 15:00:28 IST 2023","Sat Dec 30 15:01:33 IST 2023","64540","chromium","cart\addAllSkusToCart.spec.ts","","","","Add All Skus to cart Desktop Edge HiDPI",""
-"passed","Sat Dec 30 14:58:36 IST 2023","Sat Dec 30 14:59:28 IST 2023","51794","chromium","cart\addAllSkusToCart.spec.ts","","","","Add All Skus to cart Microsoft Surface",""
-"passed","Sat Dec 30 14:59:28 IST 2023","Sat Dec 30 15:00:20 IST 2023","51973","chromium","cart\addAllSkusToCart.spec.ts","","","","Add All Skus to cart Macbook Pro 15",""
-"passed","Sat Dec 30 14:58:36 IST 2023","Sat Dec 30 14:59:35 IST 2023","58218","chromium","cart\addAllSkusToCart.spec.ts","","","","Add All Skus to cart MacBook Air 2020 13",""

@@ -2,21 +2,24 @@
 
 .accordion-header{
     display:flex;
-    padding:6px;
-    align-items: center;
+    padding:8px;
     position:relative;
     cursor: pointer;
     color:#23272F;
     font-size: 14px;
+    align-items: baseline;
+    
 }
 
 .accordion-header::after{
+    
     content: '\0203A';
     position:absolute;
     font-size:x-large;
-    top:50%;
+    top: 50%;
+    transform: translateY(-60%);
     right:20px;
-    transform: translateY(-50%) ;
+   
     
 }
 
@@ -26,10 +29,11 @@
     color:#404756;
     font-size: 13px;
     list-style: none;
-    padding: 8px;
+    padding: 4px;
    letter-spacing: 0.2px; 
    font-weight: 400;  
-   
+   display: flex;
+  
 }
 
 .accordion-body{

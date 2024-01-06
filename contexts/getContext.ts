@@ -1,6 +1,4 @@
-const { devices } = require( "playwright" );
-
-
+import { devices } from "@playwright/test";
 
 const GetContext = ( deviceName  )  => {
   let context = {};

@@ -8,13 +8,13 @@ import { desktop as device } from "../../../../../contexts";
 import {CartNavbarButton} from "../../../../../Objects/Shared";
 
 
-process.env.ALLURE_RESULTS_DIR = "raw-test-data/cart/combo/580588/s"
+process.env.ALLURE_RESULTS_DIR = "raw-test-data/cart/580588/s"
 
   test.beforeEach("teardown Context", async () => {
     await teardownTest();
   });
+
   const gsize=size[1].size;
-  
 
   for(let i=0; i<4 ; i++){
   test(`AS580 & AS588 Add to cart ${gsize} Qty - ${i}`, async ({}, testInfo) => {

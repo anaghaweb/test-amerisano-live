@@ -1,8 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Sat Dec 30 13:29:47 IST 2023","Sat Dec 30 13:30:46 IST 2023","59030","chromium","cart\AS600cart.spec.ts","","","","Add AS600 to cart on Desktop Edge HiDPI",""
-"passed","Sat Dec 30 13:29:42 IST 2023","Sat Dec 30 13:30:26 IST 2023","44343","chromium","cart\AS600cart.spec.ts","","","","Add AS600 to cart on Desktop Safari",""
-"passed","Sat Dec 30 13:27:47 IST 2023","Sat Dec 30 13:28:55 IST 2023","67996","chromium","cart\AS600cart.spec.ts","","","","Add AS600 to cart on Microsoft Surface",""
-"passed","Sat Dec 30 13:28:59 IST 2023","Sat Dec 30 13:29:47 IST 2023","47846","chromium","cart\AS600cart.spec.ts","","","","Add AS600 to cart on Desktop Chrome",""
-"passed","Sat Dec 30 13:30:26 IST 2023","Sat Dec 30 13:31:01 IST 2023","35335","chromium","cart\AS600cart.spec.ts","","","","Add AS600 to cart on ultrawide FHD",""
-"passed","Sat Dec 30 13:28:55 IST 2023","Sat Dec 30 13:29:42 IST 2023","46480","chromium","cart\AS600cart.spec.ts","","","","Add AS600 to cart on Macbook Pro 15",""
-"passed","Sat Dec 30 13:27:47 IST 2023","Sat Dec 30 13:28:59 IST 2023","71679","chromium","cart\AS600cart.spec.ts","","","","Add AS600 to cart on MacBook Air 2020 13",""

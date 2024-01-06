@@ -84,8 +84,8 @@ export const wholesaleFormData = [
 ];
 
 export const shippingaddFormData = [
-  { name: 'Screenshots', path: 'shipadd/screenshot' },
-  { name: 'All fields Filled', path: 'shipadd/formfilled' },
+  { name: 'Screenshots', path: 'screenshot' },
+  { name: 'All fields Filled', path: 'formfilled' },
   { name: 'Required Fields Validate', path: 'validation/emptyfields' },
   { name: 'Successful submission', path: 'validation/submitsuccess' },
 ];
@@ -101,4 +101,66 @@ export const paymentMethodFormData = [
   
 ];
 
+export const as580 = [
+  { name: 'Extra small', path: 'AS580/XS'},
+  { name: 'Small', path: 'AS580/S'},
+  { name: 'Medium', path: 'AS580/M'},
+  { name: 'Large', path: 'AS580/L'},
+  { name: 'Extra Large', path: 'AS580/XL'},
+  { name: 'All Sizes', path: 'AS580/allsizes'},
+];
+
+
+export const as588 = [
+  
+  { name: 'Small', path: 'AS588/S'},
+  { name: 'Medium', path: 'AS588/M'},
+  { name: 'All Sizes', path: 'AS588/allsizes'},
+];
+
+
+export const as600 = [
  
+  { name: 'Small', path: 'AS600/S'},
+  { name: 'Medium', path: 'AS600/M'},
+  { name: 'Large', path: 'AS600/L'},
+  { name: 'Extra Large', path: 'AS600/XL'},
+  { name: 'All Sizes', path: 'AS600/allsizes'},
+];
+ 
+
+export const as580588 = [
+  { name: 'Extra small', path: '580588/XS'},
+  { name: 'Small', path: '580588/S'},
+  { name: 'Medium', path: '580588/M'},
+  { name: 'Large', path: '580588/L'},
+  { name: 'Extra Large', path: '580588/XL'},
+  { name: 'All Sizes', path: '580588/allsizes'},
+];
+
+export const as580600 = [
+  { name: 'Extra small', path: '580600/XS'},
+  { name: 'Small', path: '580600/S'},
+  { name: 'Medium', path: '580600/M'},
+  { name: 'Large', path: '580600/L'},
+  { name: 'Extra Large', path: '580600/XL'},
+  { name: 'All Sizes', path: '580600/allsizes'},
+];
+
+export const as588600 = [
+  { name: 'Extra small', path: '588600/XS'},
+  { name: 'Small', path: '588600/S'},
+  { name: 'Medium', path: '588600/M'},
+  { name: 'Large', path: '588600/L'},
+  { name: 'Extra Large', path: '588600/XL'},
+  { name: 'All Sizes', path: '588600/allsizes'},
+];
+
+export const as580588600 = [
+  { name: 'Extra small', path: '580588600/XS'},
+  { name: 'Small', path: '580588600/S'},
+  { name: 'Medium', path: '580588600/M'},
+  { name: 'Large', path: '580588600/L'},
+  { name: 'Extra Large', path: '580588600/XL'},
+  { name: 'All Sizes', path: '580588600/allsizes'},
+];

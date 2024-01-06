@@ -14,7 +14,7 @@ import { desktop as device } from "../../../../contexts";
   process.env.ALLURE_RESULTS_DIR = `raw-test-data/cart/addtocart/screenshot/AS580/l`;
 
   for(let i=0; i<4 ; i++){
-  test(`AS580 Add to cart ${gsize} Qty - ${i}`, async ({}, testInfo) => {
+  test(`AS580 Add to cart ${gsize} Qty - ${qty[i]}`, async ({}, testInfo) => {
     await setupTest({device});
     const page = getPage();
     const newOrderPage = new OrderPage(page);
