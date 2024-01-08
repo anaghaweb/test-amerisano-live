@@ -14,5 +14,11 @@
     "@types/node": "^20.10.5",
     "allure-playwright": "^2.10.0",
     "typescript": "^5.3.3"
+  },
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0"
   }
+  
+
 }

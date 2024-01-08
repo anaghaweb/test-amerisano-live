@@ -1,9 +1,10 @@
 import { test, expect } from "@playwright/test";
-import { AS600_Order_Section, PaymentMethodForm,ShippingAddressForm} from "../../../../Objects/forms";
-import { DiscountCoupanPopup, Proceed_To_Checkout_Btn } from "../../../../Objects/Shared";
+import { AS588_Order_Section, AS600_Order_Section, PaymentMethodForm,ShippingAddressForm} from "../../../../Objects/forms";
+import { Cookies, DiscountCoupanPopup, Proceed_To_Checkout_Btn } from "../../../../Objects/Shared";
 import { OrderPage } from "../../../../Objects/Pages";
 import { setupTest, teardownTest, getPage } from '../../../../testSetup/setupTest';
 import { largeScreen } from "../../../../contexts";
+import { size } from "../../../../data";
 
 process.env.ALLURE_RESULTS_DIR = "raw-test-data/forms/paymentmethod/creditcard/newbillingaddress";
 
@@ -35,11 +36,16 @@ for (const device of largeScreen) {
      * @Step Add product to Cart
      */
    
-    const orderAS600 = new AS600_Order_Section(page);
-    await orderAS600.AS600OrderSection("1", "1", "1", "1", "1");
-    await orderAS600.Add_AS600_To_Cart().click();
-    const checkoutBtn = new Proceed_To_Checkout_Btn(page);;
-   await checkoutBtn.ProceedToCheckOutBtn().click();
+    const pom588 = new AS588_Order_Section(page);
+     
+    await pom588.fill_input_AS588(`${size[1].size}`, '1');
+    await pom588.fill_input_AS588(`${size[2].size}`, '1');
+    
+  const cookie_pom = new Cookies(page);
+   cookie_pom.Accept_Cookies();
+  await pom588.Add_AS588_To_Cart().click();
+  const checkoutBtn = new Proceed_To_Checkout_Btn(page);;
+ await checkoutBtn.ProceedToCheckOutBtn().click();
 
    //wait for checkout page to load
    await page.waitForTimeout(5000);

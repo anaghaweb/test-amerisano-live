@@ -28,7 +28,7 @@ process.env.ALLURE_RESULTS_DIR = "raw-test-data/cart/combo/580/allsizes"
     const res1 =  await pom580.fill_input_AS580(`${gsize.size}`, qty[i].toString());
     if(res1 !==false){
       await pom580.click_Cart_Button();
-      await pom580.closeCartMenuIcon();
+      await pom580.closeCartMenuIcon(); 
       }
     
     const pomcart = new CartNavbarButton(page);
