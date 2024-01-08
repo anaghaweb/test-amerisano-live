@@ -25,6 +25,7 @@ process.env.ALLURE_RESULTS_DIR = "raw-test-data/cart/combo/588600/l"
     const cookie_pom = new Cookies(page);
     const popup_pom = new DiscountCoupanPopup(page)
     await cookie_pom.Accept_Cookies();
+    
     const pom588 = new AS588_Order_Section(page);
     const response = await pom588.fill_input_AS588(`${gsize}`, qty[i].toString());
     if(response !==false){

@@ -30,15 +30,7 @@ process.env.ALLURE_RESULTS_DIR = "raw-test-data/cart/combo/580600/allsizes"
     if(res1 !==false){
       await pom580.click_Cart_Button();
       await pom580.closeCartMenuIcon();
-      }
-    
-    // const pom588 = new AS588_Order_Section(page);   
-    // const res2 = await pom588.fill_input_AS588(`${gsize.size}`, qty[i].toString());
-    // if(res2 !==false){
-    // await pom588.click_Cart_Button();
-    // await pom588.closeCartMenuIcon();
-    // }
-  
+      } 
     
     const pom600 = new AS600_Order_Section(page);
     const res3 = await pom600.fill_input_AS600(`${gsize.size}`, qty[i].toString());

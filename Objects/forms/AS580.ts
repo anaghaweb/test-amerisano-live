@@ -56,7 +56,7 @@ class AS580_Order_Section {
   async click_Cart_Button(){
     await this.Add_AS580_To_Cart().scrollIntoViewIfNeeded();
     await this.Add_AS580_To_Cart().click();
-    await this.page.waitForTimeout(3000);
+    await this.page.waitForTimeout(2000);
   }
 
   async closeCartMenuIcon (){

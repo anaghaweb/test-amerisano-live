@@ -23,15 +23,17 @@ import { desktop as device } from "../../../../contexts";
     const cookie_pom = new Cookies(page);
     cookie_pom.Accept_Cookies();
     const orderAS588 = new AS588_Order_Section(page);
+    const res =
     await orderAS588.fill_input_AS588(`${gsize}`, qty[i].toString());
-    await orderAS588.click_Cart_Button();
+    if(res!==false){await orderAS588.click_Cart_Button();}
+    
         
     await testInfo.attach(`AS588_addtocart_${gsize}_size_Qty_${qty[i]}.png`, {
       body: await page.screenshot(),
       contentType: "image/png",
     });
-
-   await orderAS588.closeCartMenuIcon();
+    if(res!==false){await orderAS588.closeCartMenuIcon();}
+   
 
   });
 }

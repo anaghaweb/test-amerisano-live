@@ -25,15 +25,15 @@ process.env.ALLURE_RESULTS_DIR = `raw-test-data/cart/addtocart/screenshot/AS580/
     const cookie_pom = new Cookies(page);
     await cookie_pom.Accept_Cookies();
     const orderAS580 = new AS580_Order_Section(page);
-    await orderAS580.fill_input_AS580(`${gsize}`, qty[i].toString());
-    await orderAS580.click_Cart_Button();
+    const res =  await orderAS580.fill_input_AS580(`${gsize}`, qty[i].toString());
+    if(res!==false){await orderAS580.click_Cart_Button();}
         
     await testInfo.attach(`AS580_addtocart_${gsize} size_Qty_${qty[i]}.png`, {
       body: await page.screenshot(),
       contentType: "image/png",
     });
 
-   await orderAS580.closeCartMenuIcon();
+    if(res!==false){await orderAS580.closeCartMenuIcon();}
 
   });
 }

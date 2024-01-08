@@ -27,9 +27,12 @@ process.env.ALLURE_RESULTS_DIR = "raw-test-data/cart/combo/580588/xl"
     const popup_pom = new DiscountCoupanPopup(page)
     await cookie_pom.Accept_Cookies();
     const pom580 = new AS580_Order_Section(page);
+    const res =
     await pom580.fill_input_AS580(`${gsize}`, qty[i].toString());
-    await pom580.click_Cart_Button();
-    await pom580.closeCartMenuIcon();
+    if(res!==false){ 
+      await pom580.click_Cart_Button();
+      await pom580.closeCartMenuIcon();
+    }
     const pom588 = new AS588_Order_Section(page);
     const result = await pom588.fill_input_AS588(`${gsize}`, qty[i].toString());
     if(result !==false){
