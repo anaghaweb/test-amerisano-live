@@ -22,7 +22,7 @@ process.env.ALLURE_RESULTS_DIR = "raw-test-data/cart/combo/580/allsizes"
     await expect(page).toHaveURL("https://www.amerisano.com/order");
     const cookie_pom = new Cookies(page);
     const popup_pom = new DiscountCoupanPopup(page)
-    cookie_pom.Accept_Cookies();
+    
 
     const pom580 = new AS580_Order_Section(page);
     const res1 =  await pom580.fill_input_AS580(`${gsize.size}`, qty[i].toString());
@@ -34,7 +34,7 @@ process.env.ALLURE_RESULTS_DIR = "raw-test-data/cart/combo/580/allsizes"
     const pomcart = new CartNavbarButton(page);
     await pomcart.Open_Main_Cart();
     await popup_pom.closeModal();
-
+    await cookie_pom.Accept_Cookies();
     await testInfo.attach(`AS580_addtocart_${gsize.desc} size_Qty_${qty[i]}.png`, {
       body: await page.screenshot({fullPage:true}),
       contentType: "image/png",

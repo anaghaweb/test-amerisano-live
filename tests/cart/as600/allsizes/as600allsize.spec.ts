@@ -22,7 +22,7 @@ process.env.ALLURE_RESULTS_DIR = "raw-test-data/cart/combo/600/allsizes"
     await expect(page).toHaveURL("https://www.amerisano.com/order");
     const cookie_pom = new Cookies(page);
     const popup_pom = new DiscountCoupanPopup(page)
-    cookie_pom.Accept_Cookies();
+    await cookie_pom.Accept_Cookies();
 
     const pom600 = new AS600_Order_Section(page);
     const res1 =  await pom600.fill_input_AS600(`${gsize.size}`, qty[i].toString());

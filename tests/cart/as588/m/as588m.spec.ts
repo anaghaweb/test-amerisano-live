@@ -22,7 +22,7 @@ process.env.ALLURE_RESULTS_DIR = `raw-test-data/cart/addtocart/screenshot/AS588/
     await newOrderPage.LoadOrderPage();
     await expect(page).toHaveURL("https://www.amerisano.com/order");
     const cookie_pom = new Cookies(page);
-    cookie_pom.Accept_Cookies();
+    await cookie_pom.Accept_Cookies();
     const orderAS588 = new AS588_Order_Section(page);
     await orderAS588.fill_input_AS588(`${gsize}`, qty[i].toString());
     await orderAS588.click_Cart_Button();
